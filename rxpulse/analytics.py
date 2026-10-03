@@ -282,7 +282,7 @@ def briefing(cfg, tickers, segs, mv, macro, fda) -> list[str]:
         out.append(f"WTI crude is ${fw['last']:.2f}, {_fp(fw['yoy'], 0)} from a year ago.")
     rx, ppi = macro.get("cpi_rx"), macro.get("ppi_rx_retail")
     if rx and rx.get("yoy") is not None:
-        s = f"Prescription drug prices are running {_fp(rx['yoy'])} year over year"
+        s = f"Prescription drug and medical goods prices are running {_fp(rx['yoy'])} year over year"
         if ppi and ppi.get("yoy") is not None:
             s += f", while pharmacy dispensing margins sit at {_fp(ppi['yoy'])}"
         out.append(s + ".")

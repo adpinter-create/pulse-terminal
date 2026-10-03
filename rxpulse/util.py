@@ -6,6 +6,7 @@ import datetime as dt
 import json
 import logging
 import math
+import re
 from pathlib import Path
 from typing import Any
 
@@ -113,6 +114,14 @@ class Cache:
         return None if t is None else (utcnow() - t).total_seconds() / 3600.0
 
 
+SECRET_RE = re.compile(r"((?:api_key|apikey|api-key|token|access_token|key)=)[^&\s'\"]+", re.IGNORECASE)
+
+
+def redact(text: str) -> str:
+    """Strip credentials from URLs in error text before it is published."""
+    return SECRET_RE.sub(r"\1REDACTED", text or "")
+
+
 class Health:
     """Per-source status shown on the Sources tab and in the header badge."""
 
@@ -122,7 +131,7 @@ class Health:
     def set(self, key: str, label: str, status: str, detail: str = "",
             count: int | None = None, as_of: str | None = None, url: str | None = None,
             group: str = "") -> None:
-        self.rows[key] = {"key": key, "label": label, "status": status, "detail": detail[:300],
+        self.rows[key] = {"key": key, "label": label, "status": status, "detail": redact(detail)[:300],
                           "count": count, "as_of": as_of or iso(utcnow()), "url": url, "group": group}
 
     def ok(self, key, label, **kw):
