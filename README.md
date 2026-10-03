@@ -1,4 +1,4 @@
-# Pulse Terminal
+# PulseNews
 
 A self-updating, terminal-style markets and news dashboard built entirely on free sources. It covers global indices, Treasury yields, currencies, commodities, crypto, S&P sectors, Big Tech, freight and logistics, and the pharmacy and health-tech industry. News comes from about 25 publisher feeds and 24 topic searches across five desks (Markets, Tech, Supply chain, World and policy, Health and pharmacy), with a time-stamped headline wire and impact-ranked stories. Oil, fuel and drug-price trends come with correlation and lead-time analysis, plus FDA shortages and recalls and macro context. It refreshes every 15 minutes in market hours at no cost, and an open page updates itself without reloading.
 

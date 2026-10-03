@@ -1,10 +1,10 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# Pulse Terminal configuration. Everything the dashboard tracks lives here.
+# PulseNews configuration. Everything the dashboard tracks lives here.
 # Edit, commit, and the next scheduled run picks it up. No code changes needed.
 # ─────────────────────────────────────────────────────────────────────────────
 
 site:
-  title: "Pulse Terminal"
+  title: "PulseNews"
   subtitle: "Markets, tech, supply chain and pharmacy intelligence"
   author: "Andrei Pinter"
   timezone: "America/Chicago"      # display timezone for all timestamps
