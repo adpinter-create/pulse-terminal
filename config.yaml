@@ -198,7 +198,7 @@ kpis:  # Hero tiles in order. Types: ticker, macro_yoy, fda_shortages, fda_class
   - {type: "ticker", symbol: "BTC-USD", label: "Bitcoin"}
   - {type: "ticker", symbol: "DX-Y.NYB", label: "Dollar index"}
   - {type: "ticker", symbol: "XLV", label: "Health care sector"}
-  - {type: "macro_yoy", key: "cpi_rx", label: "Rx drug prices", tone: "cost"}
+  - {type: "macro_yoy", key: "cpi_rx", label: "Rx and medical goods", tone: "cost"}
   - {type: "fda_shortages", label: "Drugs in shortage"}
   - {type: "fda_class1", label: "Class I recalls"}
 fred:
@@ -212,11 +212,11 @@ fred:
     - {key: "ppi_freight", short: "Truck freight PPI", ids: ["PCU484484", "PCU484121484121"], title: "Truck freight producer prices", units: "index", fmt: "idx"}
     - {key: "ppi_pharma", short: "Drug mfg PPI", ids: ["PCU325412325412"], title: "Drug manufacturing producer prices", units: "index", fmt: "idx"}
     - {key: "ppi_rx_retail", short: "Pharmacy margin PPI", ids: ["PCU4461104461101"], title: "Pharmacy Rx retailing margins (PPI)", units: "index", fmt: "idx"}
-    - {key: "cpi_rx", short: "Rx CPI", ids: ["CUSR0000SEMF01", "CUUR0000SEMF01"], title: "Prescription drug consumer prices", units: "index", fmt: "idx"}
+    - {key: "cpi_rx", short: "Rx and medical goods CPI", ids: ["CUSR0000SAM1", "CUUR0000SAM1"], title: "Consumer prices: medical goods (mostly prescription drugs)", units: "index", fmt: "idx"}
     - {key: "cpi_medical", short: "Medical CPI", ids: ["CPIMEDSL"], title: "Medical care consumer prices", units: "index", fmt: "idx"}
     - {key: "cpi_all", short: "All-items CPI", ids: ["CPIAUCSL"], title: "All-items consumer prices", units: "index", fmt: "idx"}
     - {key: "retail_hpc", short: "Health store sales", ids: ["RSHPCS"], title: "Health and personal care store sales", units: "$M", fmt: "musd"}
-    - {key: "emp_pharmacy", short: "Pharmacy jobs", ids: ["CES4244611001", "CEU4244611001"], title: "Pharmacy and drug store jobs", units: "thousands", fmt: "k"}
+    - {key: "pharm_sales", short: "Pharmacy sales", ids: ["MRTSSM44611USN"], title: "Pharmacy and drug store retail sales", units: "$M", fmt: "musd"}
     - {key: "ust10", short: "10-yr Treasury", ids: ["DGS10"], title: "10-year Treasury yield", units: "%", fmt: "pct"}
     - {key: "fedfunds", short: "Fed funds", ids: ["DFF"], title: "Fed funds rate", units: "%", fmt: "pct"}
     - {key: "unrate", ids: ["UNRATE"], short: "Unemployment", title: "Unemployment rate", units: "%", fmt: "pct"}
@@ -263,6 +263,7 @@ news:
     - {q: "pharmacy technology OR pharmacy automation", desk: "health"}
     - {q: "retail pharmacy closures OR independent pharmacy", desk: "health"}
     - {q: "drug shortage FDA", desk: "health"}
+    - {q: "FDA approves OR FDA warns OR FDA recall drug", desk: "health"}
     - {q: "GLP-1 pharmacy OR compounded semaglutide", desk: "health"}
     - {q: "340B drug pricing program", desk: "health"}
     - {q: "pharmaceutical supply chain OR DSCSA", desk: "health"}
@@ -283,8 +284,7 @@ news:
     - {q: "global economy outlook", desk: "world"}
     - {q: "sanctions OR export controls", desk: "world"}
   feeds:
-    - {name: "FDA press releases", url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml", weight: 1.4, desk: "health"}
-    - {name: "Drug Channels", url: "https://www.drugchannels.net/feeds/posts/default?alt=rss", weight: 1.35, desk: "health"}
+    - {name: "Drug Channels", url: "https://www.drugchannels.net/feeds/posts/default", weight: 1.35, desk: "health"}
     - {name: "STAT", url: "https://www.statnews.com/feed/", weight: 1.2, desk: "health"}
     - {name: "Fierce Pharma", url: "https://www.fiercepharma.com/rss/xml", weight: 1.15, desk: "health"}
     - {name: "Fierce Healthcare", url: "https://www.fiercehealthcare.com/rss/xml", weight: 1.1, desk: "health"}
@@ -304,7 +304,6 @@ news:
     - {name: "FreightWaves", url: "https://www.freightwaves.com/feed", desk: "supply", weight: 1.1}
     - {name: "gCaptain", url: "https://gcaptain.com/feed/", desk: "supply", weight: 1.0}
     - {name: "The Loadstar", url: "https://theloadstar.com/feed/", desk: "supply", weight: 1.0}
-    - {name: "Logistics Management", url: "https://www.logisticsmgmt.com/rss", desk: "supply", weight: 1.0}
     - {name: "BBC Business", url: "https://feeds.bbci.co.uk/news/business/rss.xml", desk: "world", weight: 1.15}
     - {name: "NPR Business", url: "https://feeds.npr.org/1006/rss.xml", desk: "world", weight: 1.1}
     - {name: "The Guardian Business", url: "https://www.theguardian.com/uk/business/rss", desk: "world", weight: 1.1}
