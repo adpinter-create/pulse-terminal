@@ -423,7 +423,7 @@
         <div><dt>Sources</dt><dd>${h.good} of ${h.total} healthy</dd></div>
         <div><dt>Compiled by</dt><dd>${esc(SITE.author || "")}</dd></div>
       </dl>
-      <div class="aux">Not investment advice. Quotes may be delayed.</div>`;
+`;
   }
 
   function kpiValue(k) {

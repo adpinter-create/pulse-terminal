@@ -164,10 +164,10 @@ body { -webkit-text-size-adjust: 100%; }
 .rxp .banner strong { font-weight: 700; }
 
 /* ── Hero: the prescription label ─────────────────────────────────────── */
-.rxp .hero { display: grid; grid-template-columns: minmax(340px, 5fr) 7fr; gap: 16px; margin: 6px 0 26px; align-items: stretch; }
+.rxp .hero { display: grid; grid-template-columns: minmax(340px, 5fr) 7fr; gap: 16px; margin: 6px 0 18px; align-items: stretch; }
 .rxp .label {
   position: relative; background: var(--stock); border-radius: 6px; box-shadow: var(--shadow-label);
-  border-top: 7px solid var(--amber); padding: 16px 20px 32px;
+  border-top: 7px solid var(--amber); padding: 16px 20px 16px;
   background-image: radial-gradient(circle at 0 50%, var(--counter) 6px, transparent 6.5px), radial-gradient(circle at 100% 50%, var(--counter) 6px, transparent 6.5px);
   background-size: 12px 22px; background-repeat: repeat-y; background-position: -6px 0, calc(100% + 6px) 0;
 }
