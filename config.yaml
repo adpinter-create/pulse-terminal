@@ -1,0 +1,421 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Pulse Terminal configuration. Everything the dashboard tracks lives here.
+# Edit, commit, and the next scheduled run picks it up. No code changes needed.
+# ─────────────────────────────────────────────────────────────────────────────
+
+site:
+  title: "Pulse Terminal"
+  subtitle: "Markets, tech, supply chain and pharmacy intelligence"
+  author: "Andrei Pinter"
+  timezone: "America/Chicago"      # display timezone for all timestamps
+  theme: "terminal"                # auto | light | dark | terminal (visitors can switch)
+  poll_minutes: 3                  # how often an open page checks for fresh data
+  refresh_note: "Every 15 min in market hours"   # shown on the label; match your workflow schedule
+  public_url: ""                   # set to your address once live, e.g. https://pulse.andreipinter.com
+                                   # (fills in the embed snippet; leave blank until then)
+
+# ── Markets ──────────────────────────────────────────────────────────────────
+# weight: tile size in the heatmap (1 small, 2 medium, 3 large)
+# aliases: names that link a headline to this company (whole-word, case-insensitive)
+# stooq: symbol override for the Stooq fallback provider
+markets:
+  history_period: "2y"
+  providers: ["yfinance", "stooq", "tiingo"]   # tried in order; tiingo needs TIINGO_API_KEY
+  benchmark: "SPY"
+  sector_etf: "XLV"
+  earnings_calendar: true
+  segments:
+    - id: "indices"
+      name: "Major indices"
+      kind: "market"
+      monitor: true
+      heatmap: false
+      watchlist: false
+      tickers:
+        - {symbol: "^GSPC", name: "S&P 500", short: "SPX", unit: "idx", stooq: "^spx", weight: 2, aliases: []}
+        - {symbol: "^NDX", name: "Nasdaq 100", short: "NDX", unit: "idx", stooq: "^ndx", weight: 2, aliases: []}
+        - {symbol: "^DJI", name: "Dow Jones Industrial Average", short: "INDU", unit: "idx", stooq: "^dji", weight: 2, aliases: []}
+        - {symbol: "^RUT", name: "Russell 2000", short: "RTY", unit: "idx", note: "US small caps", aliases: []}
+        - {symbol: "^VIX", name: "Volatility index (VIX)", short: "VIX", unit: "idx", note: "Expected S&P 500 volatility; higher means more fear", aliases: []}
+        - {symbol: "^STOXX50E", name: "Euro Stoxx 50", short: "SX5E", unit: "idx", aliases: []}
+        - {symbol: "^FTSE", name: "FTSE 100", short: "UKX", unit: "idx", stooq: "^ukx", aliases: []}
+        - {symbol: "^N225", name: "Nikkei 225", short: "NKY", unit: "idx", stooq: "^nkx", aliases: []}
+        - {symbol: "^HSI", name: "Hang Seng", short: "HSI", unit: "idx", stooq: "^hsi", aliases: []}
+    - id: "rates_fx"
+      name: "Rates and currencies"
+      kind: "market"
+      monitor: true
+      heatmap: false
+      watchlist: false
+      tickers:
+        - {symbol: "^IRX", name: "13-week T-bill yield", short: "US3M", unit: "%", aliases: []}
+        - {symbol: "^FVX", name: "5-year Treasury yield", short: "US5Y", unit: "%", aliases: []}
+        - {symbol: "^TNX", name: "10-year Treasury yield", short: "US10Y", unit: "%", aliases: []}
+        - {symbol: "^TYX", name: "30-year Treasury yield", short: "US30Y", unit: "%", aliases: []}
+        - {symbol: "DX-Y.NYB", name: "US dollar index", short: "DXY", unit: "idx", aliases: []}
+        - {symbol: "EURUSD=X", name: "Euro in dollars", short: "EURUSD", unit: "fx", stooq: "eurusd", aliases: []}
+        - {symbol: "USDJPY=X", name: "Dollar in yen", short: "USDJPY", unit: "fx", stooq: "usdjpy", aliases: []}
+        - {symbol: "GBPUSD=X", name: "Pound in dollars", short: "GBPUSD", unit: "fx", stooq: "gbpusd", aliases: []}
+        - {symbol: "USDCNY=X", name: "Dollar in yuan", short: "USDCNY", unit: "fx", stooq: "usdcny", aliases: []}
+    - id: "crypto"
+      name: "Crypto"
+      kind: "market"
+      monitor: true
+      heatmap: false
+      watchlist: false
+      tickers:
+        - {symbol: "BTC-USD", name: "Bitcoin", short: "BTC", stooq: "btcusd", weight: 2, aliases: []}
+        - {symbol: "ETH-USD", name: "Ether", short: "ETH", stooq: "ethusd", aliases: []}
+    - id: "sectors"
+      name: "S&P 500 sectors"
+      kind: "market"
+      monitor: false
+      heatmap: true
+      watchlist: true
+      tickers:
+        - {symbol: "XLK", name: "Technology", weight: 3, aliases: []}
+        - {symbol: "XLF", name: "Financials", weight: 2, aliases: []}
+        - {symbol: "XLV", name: "Health care", weight: 2, note: "Health Care Select Sector SPDR", aliases: []}
+        - {symbol: "XLY", name: "Consumer discretionary", weight: 2, aliases: []}
+        - {symbol: "XLC", name: "Communication services", weight: 2, aliases: []}
+        - {symbol: "XLI", name: "Industrials", weight: 2, aliases: []}
+        - {symbol: "XLP", name: "Consumer staples", aliases: []}
+        - {symbol: "XLE", name: "Energy", aliases: []}
+        - {symbol: "XLU", name: "Utilities", aliases: []}
+        - {symbol: "XLB", name: "Materials", aliases: []}
+        - {symbol: "XLRE", name: "Real estate", aliases: []}
+    - id: "bigtech"
+      name: "Big Tech and AI"
+      tickers:
+        - {symbol: "NVDA", name: "Nvidia", weight: 3, note: "AI accelerators", aliases: ["Nvidia"]}
+        - {symbol: "MSFT", name: "Microsoft", weight: 3, aliases: ["Microsoft", "Azure"]}
+        - {symbol: "AAPL", name: "Apple", weight: 3, aliases: ["Apple", "iPhone"]}
+        - {symbol: "GOOGL", name: "Alphabet", weight: 3, aliases: ["Alphabet", "Google", "YouTube", "Gemini"]}
+        - {symbol: "META", name: "Meta Platforms", weight: 2, aliases: ["Meta", "Facebook", "Instagram", "WhatsApp"]}
+        - {symbol: "AVGO", name: "Broadcom", weight: 2, aliases: ["Broadcom"]}
+        - {symbol: "TSM", name: "TSMC", weight: 2, note: "Chip foundry", aliases: ["TSMC", "Taiwan Semiconductor"]}
+        - {symbol: "AMD", name: "AMD", weight: 1, aliases: ["AMD", "Advanced Micro Devices"]}
+        - {symbol: "TSLA", name: "Tesla", weight: 2, aliases: ["Tesla"]}
+        - {symbol: "ORCL", name: "Oracle", weight: 1, aliases: ["Oracle"]}
+    - id: "logistics"
+      name: "Freight and logistics"
+      tickers:
+        - {symbol: "UPS", name: "UPS", weight: 2, aliases: ["UPS", "United Parcel Service"]}
+        - {symbol: "FDX", name: "FedEx", weight: 2, aliases: ["FedEx"]}
+        - {symbol: "UNP", name: "Union Pacific", weight: 2, note: "Railroad", aliases: ["Union Pacific"]}
+        - {symbol: "CHRW", name: "C.H. Robinson", note: "Freight brokerage", aliases: ["C.H. Robinson"]}
+        - {symbol: "EXPD", name: "Expeditors", note: "Freight forwarding", aliases: ["Expeditors"]}
+        - {symbol: "JBHT", name: "J.B. Hunt", note: "Trucking and intermodal", aliases: ["J.B. Hunt"]}
+        - {symbol: "ODFL", name: "Old Dominion Freight", note: "Less-than-truckload", aliases: ["Old Dominion"]}
+        - {symbol: "XPO", name: "XPO", note: "Less-than-truckload", aliases: ["XPO"]}
+        - {symbol: "MATX", name: "Matson", note: "Ocean shipping", aliases: ["Matson"]}
+        - {symbol: "ZIM", name: "ZIM Shipping", note: "Container shipping", aliases: ["ZIM"]}
+    - id: "pbm"
+      name: "PBMs and payers"
+      tickers:
+        - {symbol: "CVS", name: "CVS Health", note: "Caremark PBM, Aetna, retail pharmacy", weight: 3, aliases: ["CVS Health", "CVS Pharmacy", "CVS", "Caremark", "Aetna"]}
+        - {symbol: "CI", name: "Cigna Group", note: "Express Scripts, Evernorth", weight: 3, aliases: ["Cigna", "Express Scripts", "Evernorth", "Accredo"]}
+        - {symbol: "UNH", name: "UnitedHealth", note: "Optum Rx", weight: 3, aliases: ["UnitedHealth", "UnitedHealthcare", "Optum", "Optum Rx"]}
+        - {symbol: "ELV", name: "Elevance Health", note: "CarelonRx", weight: 2, aliases: ["Elevance", "CarelonRx", "Anthem"]}
+        - {symbol: "HUM", name: "Humana", note: "CenterWell Pharmacy", weight: 2, aliases: ["Humana", "CenterWell"]}
+      desk: "health"
+    - id: "wholesale"
+      name: "Drug wholesalers"
+      tickers:
+        - {symbol: "MCK", name: "McKesson", note: "Distribution, CoverMyMeds", weight: 3, aliases: ["McKesson", "CoverMyMeds"]}
+        - {symbol: "COR", name: "Cencora", note: "Formerly AmerisourceBergen", weight: 3, aliases: ["Cencora", "AmerisourceBergen"]}
+        - {symbol: "CAH", name: "Cardinal Health", note: "Distribution, specialty", weight: 2, aliases: ["Cardinal Health"]}
+      desk: "health"
+    - id: "retail"
+      name: "Retail and digital pharmacy"
+      tickers:
+        - {symbol: "WMT", name: "Walmart", note: "Walmart Pharmacy", weight: 3, aliases: ["Walmart"]}
+        - {symbol: "AMZN", name: "Amazon", note: "Amazon Pharmacy, PillPack", weight: 3, aliases: ["Amazon Pharmacy", "PillPack", "Amazon One Medical"]}
+        - {symbol: "KR", name: "Kroger", note: "Kroger Health pharmacies", weight: 2, aliases: ["Kroger"]}
+        - {symbol: "COST", name: "Costco", note: "Costco Pharmacy", weight: 2, aliases: ["Costco"]}
+        - {symbol: "HIMS", name: "Hims & Hers", note: "DTC telehealth, compounded GLP-1s", weight: 1, aliases: ["Hims & Hers", "Hims and Hers", "Hims"]}
+        - {symbol: "GDRX", name: "GoodRx", note: "Discount cards, pharmacy tech", weight: 1, aliases: ["GoodRx"]}
+        - {symbol: "OPCH", name: "Option Care Health", note: "Home infusion pharmacy", weight: 1, aliases: ["Option Care"]}
+      desk: "health"
+    - id: "tech"
+      name: "Pharmacy tech and automation"
+      tickers:
+        - {symbol: "OMCL", name: "Omnicell", note: "Pharmacy automation", weight: 2, aliases: ["Omnicell"]}
+        - {symbol: "BDX", name: "BD", note: "Pyxis dispensing systems", weight: 2, aliases: ["Becton Dickinson", "Becton, Dickinson", "Pyxis"]}
+        - {symbol: "VEEV", name: "Veeva Systems", note: "Life-sciences software", weight: 2, aliases: ["Veeva"]}
+        - {symbol: "WAY", name: "Waystar", note: "Healthcare payments software", weight: 1, aliases: ["Waystar"]}
+      desk: "health"
+    - id: "mfr"
+      name: "Manufacturers and GLP-1"
+      tickers:
+        - {symbol: "LLY", name: "Eli Lilly", note: "Mounjaro, Zepbound", weight: 3, aliases: ["Eli Lilly", "Lilly", "Mounjaro", "Zepbound"]}
+        - {symbol: "NVO", name: "Novo Nordisk", note: "Ozempic, Wegovy", weight: 3, aliases: ["Novo Nordisk", "Novo", "Ozempic", "Wegovy"]}
+        - {symbol: "PFE", name: "Pfizer", note: "", weight: 2, aliases: ["Pfizer"]}
+        - {symbol: "MRK", name: "Merck", note: "Keytruda", weight: 2, aliases: ["Merck", "Keytruda"]}
+        - {symbol: "ABBV", name: "AbbVie", note: "Humira, Skyrizi", weight: 2, aliases: ["AbbVie", "Humira", "Skyrizi"]}
+        - {symbol: "JNJ", name: "Johnson & Johnson", note: "", weight: 2, aliases: ["Johnson & Johnson", "J&J"]}
+      desk: "health"
+    - id: "generics"
+      name: "Generics and biosimilars"
+      tickers:
+        - {symbol: "TEVA", name: "Teva", note: "Largest generics maker", weight: 2, aliases: ["Teva"]}
+        - {symbol: "VTRS", name: "Viatris", note: "Generics, biosimilars", weight: 1, aliases: ["Viatris"]}
+        - {symbol: "AMRX", name: "Amneal", note: "Generics, specialty", weight: 1, aliases: ["Amneal"]}
+      desk: "health"
+    - id: "etf"
+      name: "Benchmarks"
+      benchmark: true
+      tickers:
+        - {symbol: "SPY", name: "S&P 500", note: "SPDR S&P 500 ETF", weight: 2, aliases: []}
+        - {symbol: "XPH", name: "Pharma ETF", note: "SPDR S&P Pharmaceuticals", weight: 1, aliases: []}
+        - {symbol: "IHF", name: "Providers ETF", note: "iShares US Healthcare Providers", weight: 1, aliases: []}
+        - {symbol: "IBB", name: "Biotech ETF", note: "iShares Biotechnology", weight: 1, aliases: []}
+      heatmap: false
+    - id: "commodities"
+      name: "Commodities"
+      benchmark: true
+      tickers:
+        - {symbol: "CL=F", name: "WTI crude", note: "Front-month futures, $/bbl", short: "WTI", weight: 2, stooq: "cl.f", unit: "$/bbl", aliases: []}
+        - {symbol: "BZ=F", name: "Brent crude", note: "Front-month futures, $/bbl", short: "Brent", weight: 2, stooq: "cb.f", unit: "$/bbl", aliases: []}
+        - {symbol: "HO=F", name: "Heating oil / ULSD", note: "Diesel proxy, $/gal", short: "ULSD", weight: 1, stooq: "ho.f", unit: "$/gal", aliases: []}
+        - {symbol: "NG=F", name: "Natural gas", note: "Henry Hub futures, $/MMBtu", short: "NatGas", weight: 1, stooq: "ng.f", unit: "$/MMBtu", aliases: []}
+        - {symbol: "GC=F", name: "Gold", short: "Gold", note: "Front-month futures, $/oz", weight: 1, stooq: "gc.f", unit: "$/oz", aliases: []}
+        - {symbol: "SI=F", name: "Silver", short: "Silver", note: "Front-month futures, $/oz", weight: 1, stooq: "si.f", unit: "$/oz", aliases: []}
+        - {symbol: "HG=F", name: "Copper", short: "Copper", note: "Front-month futures, $/lb", weight: 1, stooq: "hg.f", unit: "$/lb", aliases: []}
+
+# ── Government economic data (FRED) ─────────────────────────────────────────
+# ids: first working ID wins (fallbacks for series BLS occasionally renames)
+      heatmap: false
+      watchlist: false
+      monitor: true
+kpis:  # Hero tiles in order. Types: ticker, macro_yoy, fda_shortages, fda_class1, breadth
+  - {type: "ticker", symbol: "^GSPC", label: "S&P 500"}
+  - {type: "ticker", symbol: "^NDX", label: "Nasdaq 100"}
+  - {type: "ticker", symbol: "^TNX", label: "10-year yield"}
+  - {type: "ticker", symbol: "^VIX", label: "Volatility (VIX)", tone: "inverse"}
+  - {type: "ticker", symbol: "CL=F", label: "WTI crude", tone: "cost"}
+  - {type: "ticker", symbol: "GC=F", label: "Gold"}
+  - {type: "ticker", symbol: "BTC-USD", label: "Bitcoin"}
+  - {type: "ticker", symbol: "DX-Y.NYB", label: "Dollar index"}
+  - {type: "ticker", symbol: "XLV", label: "Health care sector"}
+  - {type: "macro_yoy", key: "cpi_rx", label: "Rx drug prices", tone: "cost"}
+  - {type: "fda_shortages", label: "Drugs in shortage"}
+  - {type: "fda_class1", label: "Class I recalls"}
+fred:
+  start: "2016-01-01"
+  series:
+    - {key: "wti", short: "Crude (WTI)", ids: ["DCOILWTICO"], title: "WTI crude, spot", units: "$/bbl", fmt: "usd"}
+    - {key: "brent", short: "Brent", ids: ["DCOILBRENTEU"], title: "Brent crude, spot", units: "$/bbl", fmt: "usd"}
+    - {key: "diesel", short: "Diesel", ids: ["GASDESW"], title: "US diesel, retail", units: "$/gal", fmt: "usd3"}
+    - {key: "gasoline", short: "Gasoline", ids: ["GASREGW"], title: "US gasoline, retail", units: "$/gal", fmt: "usd3"}
+    - {key: "natgas", short: "Natural gas", ids: ["DHHNGSP"], title: "Henry Hub natural gas", units: "$/MMBtu", fmt: "usd"}
+    - {key: "ppi_freight", short: "Truck freight PPI", ids: ["PCU484484", "PCU484121484121"], title: "Truck freight producer prices", units: "index", fmt: "idx"}
+    - {key: "ppi_pharma", short: "Drug mfg PPI", ids: ["PCU325412325412"], title: "Drug manufacturing producer prices", units: "index", fmt: "idx"}
+    - {key: "ppi_rx_retail", short: "Pharmacy margin PPI", ids: ["PCU4461104461101"], title: "Pharmacy Rx retailing margins (PPI)", units: "index", fmt: "idx"}
+    - {key: "cpi_rx", short: "Rx CPI", ids: ["CUSR0000SEMF01", "CUUR0000SEMF01"], title: "Prescription drug consumer prices", units: "index", fmt: "idx"}
+    - {key: "cpi_medical", short: "Medical CPI", ids: ["CPIMEDSL"], title: "Medical care consumer prices", units: "index", fmt: "idx"}
+    - {key: "cpi_all", short: "All-items CPI", ids: ["CPIAUCSL"], title: "All-items consumer prices", units: "index", fmt: "idx"}
+    - {key: "retail_hpc", short: "Health store sales", ids: ["RSHPCS"], title: "Health and personal care store sales", units: "$M", fmt: "musd"}
+    - {key: "emp_pharmacy", short: "Pharmacy jobs", ids: ["CES4244611001", "CEU4244611001"], title: "Pharmacy and drug store jobs", units: "thousands", fmt: "k"}
+    - {key: "ust10", short: "10-yr Treasury", ids: ["DGS10"], title: "10-year Treasury yield", units: "%", fmt: "pct"}
+    - {key: "fedfunds", short: "Fed funds", ids: ["DFF"], title: "Fed funds rate", units: "%", fmt: "pct"}
+    - {key: "unrate", ids: ["UNRATE"], short: "Unemployment", title: "Unemployment rate", units: "%", fmt: "pct"}
+    - {key: "t10y2y", ids: ["T10Y2Y"], short: "10y minus 2y", title: "Yield curve: 10-year minus 2-year", units: "%", fmt: "pct"}
+    - {key: "hy_spread", ids: ["BAMLH0A0HYM2"], short: "High-yield spread", title: "High-yield corporate bond spread", units: "%", fmt: "pct"}
+    - {key: "freight_tsi", ids: ["TSIFRGHT"], short: "Freight index", title: "Freight transportation services index", units: "index", fmt: "idx"}
+    - {key: "indpro", ids: ["INDPRO"], short: "Industrial output", title: "Industrial production index", units: "index", fmt: "idx"}
+
+# How input costs flow toward the pharmacy counter (shown in this order)
+cost_chain: ["wti", "diesel", "ppi_freight", "ppi_pharma", "ppi_rx_retail", "cpi_rx"]
+# Series compared in the correlation matrix (year-over-year % changes, monthly)
+correlation_set: ["wti", "diesel", "natgas", "ppi_freight", "ppi_pharma", "ppi_rx_retail", "cpi_rx", "cpi_medical", "cpi_all"]
+correlation_window_months: 60
+# Does the first series lead the second? Tested at 0–12 month lags.
+lead_lag_pairs:
+  - ["wti", "ppi_freight"]
+  - ["diesel", "ppi_freight"]
+  - ["wti", "ppi_pharma"]
+  - ["ppi_freight", "cpi_rx"]
+  - ["ppi_pharma", "cpi_rx"]
+  - ["ppi_rx_retail", "cpi_rx"]
+
+# ── FDA (openFDA, no key required; OPENFDA_API_KEY raises limits) ───────────
+fda:
+  recall_lookback_days: 30
+  recall_trend_weeks: 26
+
+# ── News ─────────────────────────────────────────────────────────────────────
+news:
+  desks:  # News desks. Every feed and search belongs to one; the News tab filters by desk
+    - {id: "markets", name: "Markets"}
+    - {id: "tech", name: "Tech"}
+    - {id: "supply", name: "Supply chain"}
+    - {id: "world", name: "World and policy"}
+    - {id: "health", name: "Health and pharmacy"}
+  default_desk: "health"
+  lookback_hours: 72
+  max_items: 450
+  # Google News topic searches: reliable, broad, no key needed
+  google_news_window: "3d"
+  google_news_queries:
+    - {q: "pharmacy benefit manager OR PBM reform", desk: "health"}
+    - {q: "drug pricing Medicare negotiation", desk: "health"}
+    - {q: "pharmacy technology OR pharmacy automation", desk: "health"}
+    - {q: "retail pharmacy closures OR independent pharmacy", desk: "health"}
+    - {q: "drug shortage FDA", desk: "health"}
+    - {q: "GLP-1 pharmacy OR compounded semaglutide", desk: "health"}
+    - {q: "340B drug pricing program", desk: "health"}
+    - {q: "pharmaceutical supply chain OR DSCSA", desk: "health"}
+    - {q: "pharmacy acquisition OR healthcare private equity deal", desk: "health"}
+    - {q: "medication adherence OR Star Ratings Part D", desk: "health"}
+    - {q: "telepharmacy OR pharmacist prescribing", desk: "health"}
+    - {q: "stock market today", desk: "markets"}
+    - {q: "Federal Reserve interest rates", desk: "markets"}
+    - {q: "earnings beat guidance shares", desk: "markets"}
+    - {q: "Treasury yields bond market", desk: "markets"}
+    - {q: "Nvidia AI chips", desk: "tech"}
+    - {q: "artificial intelligence regulation OR AI model launch", desk: "tech"}
+    - {q: "Big Tech antitrust", desk: "tech"}
+    - {q: "supply chain disruption", desk: "supply"}
+    - {q: "freight rates trucking OR container shipping", desk: "supply"}
+    - {q: "port congestion OR Red Sea shipping OR Panama Canal", desk: "supply"}
+    - {q: "tariffs imports trade", desk: "supply"}
+    - {q: "global economy outlook", desk: "world"}
+    - {q: "sanctions OR export controls", desk: "world"}
+  feeds:
+    - {name: "FDA press releases", url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml", weight: 1.4, desk: "health"}
+    - {name: "Drug Channels", url: "https://www.drugchannels.net/feeds/posts/default?alt=rss", weight: 1.35, desk: "health"}
+    - {name: "STAT", url: "https://www.statnews.com/feed/", weight: 1.2, desk: "health"}
+    - {name: "Fierce Pharma", url: "https://www.fiercepharma.com/rss/xml", weight: 1.15, desk: "health"}
+    - {name: "Fierce Healthcare", url: "https://www.fiercehealthcare.com/rss/xml", weight: 1.1, desk: "health"}
+    - {name: "BioPharma Dive", url: "https://www.biopharmadive.com/feeds/news/", weight: 1.1, desk: "health"}
+    - {name: "Healthcare Dive", url: "https://www.healthcaredive.com/feeds/news/", weight: 1.05, desk: "health"}
+    - {name: "CNBC Top News", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", desk: "markets", weight: 1.15}
+    - {name: "CNBC Markets", url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", desk: "markets", weight: 1.15}
+    - {name: "MarketWatch", url: "https://feeds.content.dowjones.io/public/rss/mw_topstories", desk: "markets", weight: 1.1}
+    - {name: "Yahoo Finance", url: "https://finance.yahoo.com/news/rssindex", desk: "markets", weight: 1.0}
+    - {name: "Federal Reserve", url: "https://www.federalreserve.gov/feeds/press_all.xml", desk: "markets", weight: 1.4}
+    - {name: "TechCrunch", url: "https://techcrunch.com/feed/", desk: "tech", weight: 1.05}
+    - {name: "The Verge", url: "https://www.theverge.com/rss/index.xml", desk: "tech", weight: 1.0}
+    - {name: "Ars Technica", url: "https://feeds.arstechnica.com/arstechnica/index", desk: "tech", weight: 1.05}
+    - {name: "MIT Technology Review", url: "https://www.technologyreview.com/feed/", desk: "tech", weight: 1.1}
+    - {name: "Hacker News", url: "https://hnrss.org/frontpage?points=200", desk: "tech", weight: 0.9}
+    - {name: "Supply Chain Dive", url: "https://www.supplychaindive.com/feeds/news/", desk: "supply", weight: 1.15}
+    - {name: "FreightWaves", url: "https://www.freightwaves.com/feed", desk: "supply", weight: 1.1}
+    - {name: "gCaptain", url: "https://gcaptain.com/feed/", desk: "supply", weight: 1.0}
+    - {name: "The Loadstar", url: "https://theloadstar.com/feed/", desk: "supply", weight: 1.0}
+    - {name: "Logistics Management", url: "https://www.logisticsmgmt.com/rss", desk: "supply", weight: 1.0}
+    - {name: "BBC Business", url: "https://feeds.bbci.co.uk/news/business/rss.xml", desk: "world", weight: 1.15}
+    - {name: "NPR Business", url: "https://feeds.npr.org/1006/rss.xml", desk: "world", weight: 1.1}
+    - {name: "The Guardian Business", url: "https://www.theguardian.com/uk/business/rss", desk: "world", weight: 1.1}
+  source_weights:
+    "Reuters": 1.3
+    "Bloomberg": 1.3
+    "The Wall Street Journal": 1.3
+    "STAT": 1.2
+    "Fierce Pharma": 1.15
+    "Fierce Healthcare": 1.1
+    "Drug Channels": 1.35
+    "Pharmacy Times": 1.1
+    "Drug Topics": 1.1
+    "Becker's Hospital Review": 1.0
+    "Modern Healthcare": 1.15
+    "KFF Health News": 1.2
+    "Axios": 1.1
+    "CNBC": 1.15
+    "U.S. Food and Drug Administration": 1.4
+  # Headline categories (whole-word, case-insensitive). Colors follow pharmacy auxiliary-label stickers.
+    MarketWatch: 1.1
+    Yahoo Finance: 1.0
+    Barron's: 1.2
+    Financial Times: 1.3
+    The Economist: 1.25
+    AP News: 1.25
+    Associated Press: 1.25
+    BBC: 1.15
+    NPR: 1.1
+    The Verge: 1.0
+    TechCrunch: 1.05
+    Ars Technica: 1.05
+    Wired: 1.05
+    FreightWaves: 1.1
+    Supply Chain Dive: 1.15
+    Journal of Commerce: 1.2
+    Federal Reserve: 1.4
+    Investopedia: 0.8
+    Motley Fool: 0.75
+    The Motley Fool: 0.75
+    Seeking Alpha: 0.85
+    Benzinga: 0.8
+    Zacks: 0.7
+    GuruFocus: 0.7
+    PR Newswire: 0.7
+    Business Wire: 0.7
+    GlobeNewswire: 0.7
+  categories:
+    - id: "pbm"
+      name: "PBMs and payers"
+      color: "#8CC8EE"
+      keywords: ["PBM", "PBMs", "pharmacy benefit", "Express Scripts", "Caremark", "Optum Rx", "formulary", "rebate", "rebates", "spread pricing", "DIR fee", "DIR fees", "FTC", "delinking"]
+    - id: "pricing"
+      name: "Drug pricing"
+      color: "#F7D23E"
+      keywords: ["drug pricing", "drug prices", "drug price", "price negotiation", "negotiated price", "Inflation Reduction Act", "Medicare Part D", "Part D", "Medicaid", "CMS", "340B", "most favored nation", "cost-plus", "list price", "insulin"]
+    - id: "fda"
+      name: "FDA and regulatory"
+      color: "#F4A3C0"
+      keywords: ["FDA", "drug recall", "drug recalls", "warning letter", "boxed warning", "REMS", "DEA", "controlled substance", "drug approval", "FDA approval", "biosimilar approval"]
+    - id: "ops"
+      name: "Pharmacy operations"
+      color: "#9ED49A"
+      keywords: ["pharmacist", "pharmacists", "pharmacy closure", "pharmacy closures", "pharmacy desert", "independent pharmacy", "independent pharmacies", "retail pharmacy", "community pharmacy", "reimbursement", "NCPA", "staffing", "Walgreens", "Rite Aid", "adherence", "Star Ratings", "MTM", "medication therapy management", "vaccination", "immunization"]
+    - id: "tech"
+      name: "Health tech"
+      color: "#C3B3E6"
+      keywords: ["pharmacy technology", "pharmacy automation", "digital health", "health tech", "telehealth", "telepharmacy", "e-prescribing", "Surescripts", "EHR", "electronic health record", "interoperability", "Epic Systems"]
+    - id: "deals"
+      name: "Deals and corporate"
+      color: "#F59A3C"
+      keywords: ["acquire", "acquires", "acquired", "acquisition", "merger", "merge", "private equity", "IPO", "raises", "funding round", "buyout", "take-private", "divest", "divestiture", "spinoff", "spin off", "layoffs", "job cuts", "bankruptcy", "Chapter 11"]
+    - id: "supply"
+      name: "Drug supply"
+      color: "#D5DBE0"
+      keywords: ["drug shortage", "drug shortages", "shortage", "shortages", "DSCSA", "drug wholesaler", "wholesalers", "McKesson", "Cencora", "Cardinal Health", "active pharmaceutical ingredient", "generic drug", "generic drugs", "generics", "biosimilar", "biosimilars", "sterile injectable"]
+    - id: "glp1"
+      name: "GLP-1 and specialty"
+      color: "#FFB3A7"
+      keywords: ["GLP-1", "GLP-1s", "Ozempic", "Wegovy", "Mounjaro", "Zepbound", "semaglutide", "tirzepatide", "obesity", "weight loss", "specialty pharmacy", "compounding", "compounded", "orforglipron"]
+    - id: "macro"
+      name: "Fed and economy"
+      color: "#9DB7F5"
+      keywords: ["Federal Reserve", "the Fed", "Powell", "interest rate", "interest rates", "rate cut", "rate cuts", "rate hike", "inflation", "CPI", "PCE", "jobs report", "payrolls", "unemployment", "GDP", "recession", "consumer spending", "retail sales", "housing starts"]
+    - id: "mkts"
+      name: "Markets and earnings"
+      color: "#7FD1C1"
+      keywords: ["stocks", "stock market", "Wall Street", "S&P 500", "Nasdaq", "Dow", "earnings", "quarterly results", "revenue", "profit", "guidance", "shares", "rally", "selloff", "sell-off", "Treasury yields", "bond market", "bitcoin", "crypto", "dividend", "buyback", "analyst"]
+    - id: "ai"
+      name: "AI and chips"
+      color: "#B9A6F2"
+      keywords: ["AI", "artificial intelligence", "generative AI", "chatbot", "large language model", "LLM", "OpenAI", "Anthropic", "Nvidia", "chip", "chips", "semiconductor", "semiconductors", "GPU", "data center", "data centers", "TSMC"]
+    - id: "bigtech"
+      name: "Big Tech and platforms"
+      color: "#C9D7E3"
+      keywords: ["Apple", "Microsoft", "Google", "Alphabet", "Meta", "Amazon", "Tesla", "antitrust", "App Store", "cloud", "smartphone", "social media", "streaming"]
+    - id: "cyber"
+      name: "Cybersecurity"
+      color: "#F28B82"
+      keywords: ["cyberattack", "cyber attack", "ransomware", "data breach", "breach", "hackers", "hacked", "vulnerability", "zero-day", "outage", "malware", "phishing"]
+    - id: "freight"
+      name: "Freight and shipping"
+      color: "#E8B86D"
+      keywords: ["freight", "trucking", "truckload", "LTL", "shipping", "container", "containers", "port", "ports", "rail", "railroad", "carrier", "carriers", "logistics", "warehouse", "warehousing", "Red Sea", "Suez", "Panama Canal", "air cargo", "parcel", "supply chain", "supply chains"]
+    - id: "trade"
+      name: "Trade and tariffs"
+      color: "#F6C177"
+      keywords: ["tariff", "tariffs", "trade war", "trade deal", "export controls", "sanctions", "customs", "de minimis", "reshoring", "nearshoring", "onshoring", "imports", "exports"]
+    - id: "energy"
+      name: "Energy and commodities"
+      color: "#A8D08D"
+      keywords: ["oil", "crude", "OPEC", "natural gas", "gasoline", "diesel", "LNG", "gold", "copper", "commodities", "commodity"]
+  # Words that signal a headline could move markets or change the landscape
+  impact_terms: ["lawsuit", "sues", "sued", "settlement", "FTC", "DOJ", "investigation", "executive order", "tariff", "tariffs", "recall", "Class I", "bankruptcy", "Chapter 11", "layoffs", "closes", "closing", "closures", "acquire", "acquisition", "merger", "guidance", "downgrade", "upgrade", "beats", "misses", "record", "ban", "halt", "approves", "rejects", "rate cut", "rate hike", "plunges", "plunge", "surges", "soars", "tumbles", "record high", "all-time high", "strike", "outage", "hacked", "sanctions", "export controls", "default", "crash"]

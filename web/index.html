@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="__THEME__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__</title>
+<meta name="description" content="Pharmacy and health-tech intelligence: markets, headlines, drug and energy costs, shortages and recalls, refreshed through the trading day.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b5650d'/%3E%3Ctext x='29' y='44' font-size='36' font-weight='700' text-anchor='middle' fill='white' font-family='Arial,Helvetica,sans-serif'%3ER%3Ctspan font-size='24' dy='6'%3Ex%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+  // Apply the saved theme before first paint to avoid a flash
+  (function () { try { var t = JSON.parse(localStorage.getItem("rxp:theme")); if (t) document.documentElement.dataset.theme = t; } catch (e) {} })();
+</script>
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div id="app" class="rxp">
+  <noscript><p style="padding:24px;font-family:system-ui">This dashboard needs JavaScript. The raw data is available at <a href="data/latest.json">data/latest.json</a> and as CSV files in <a href="data/csv/">data/csv</a>.</p></noscript>
+</div>
+<script id="rxp-data" type="application/json">__DATA__</script>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>
