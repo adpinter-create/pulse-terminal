@@ -134,8 +134,6 @@ body { -webkit-text-size-adjust: 100%; }
 .rxp .head { display: grid; grid-template-columns: auto minmax(200px, 520px) auto; gap: 18px; align-items: center; padding: 14px 0 10px; }
 .rxp .brand { display: flex; gap: 11px; align-items: center; text-decoration: none; }
 .rxp .brand-mark { width: 38px; height: 38px; border-radius: 9px; background: var(--amber); color: #fff; display: grid; place-items: center; font-size: 22px; line-height: 1; box-shadow: inset 0 -3px 0 rgba(0,0,0,.18); flex: none; }
-.rxp .rx { font-weight: 800; font-stretch: 80%; letter-spacing: -.04em; position: relative; }
-.rxp .rx i { font-style: normal; font-size: .62em; font-weight: 750; position: relative; top: .28em; margin-left: -.04em; }
 .rxp .brand strong { display: block; font-size: 21px; font-weight: 760; font-stretch: 80%; letter-spacing: -.01em; line-height: 1.05; }
 .rxp .brand-sub { display: block; font-size: 12.5px; color: var(--ink-3); }
 .rxp .search { position: relative; }
@@ -173,7 +171,9 @@ body { -webkit-text-size-adjust: 100%; }
 }
 .rxp .lb-top { display: flex; justify-content: space-between; gap: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .rxp .lb-pharm { display: flex; gap: 10px; align-items: center; }
-.rxp .lb-mark { font-size: 24px; color: var(--amber); line-height: 1; }
+.rxp .lb-mark { color: var(--amber); line-height: 0; flex: none; }
+.rxp .lb-mark .logo-svg { width: 26px; height: 26px; display: block; }
+.rxp .brand-mark .logo-svg { width: 26px; height: 26px; display: block; }
 .rxp .lb-pharm strong { display: block; font-size: 15px; font-weight: 750; font-stretch: 85%; }
 .rxp .lb-sub { display: block; font-size: 12px; color: var(--ink-3); }
 .rxp .lb-meta { display: grid; grid-template-columns: auto auto; gap: 1px 10px; font-size: 12px; text-align: right; align-content: start; }

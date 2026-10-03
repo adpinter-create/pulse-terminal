@@ -345,7 +345,7 @@
       <div class="tape" id="tape" role="region" aria-label="Watchlist prices"></div>
       <div class="wrap">
         <header class="head">
-          <a class="brand" href="#overview" data-act="tab" data-tab="overview"><span class="brand-mark"><span class="rx" aria-hidden="true">R<i>x</i></span></span><span class="brand-txt"><strong>${esc(SITE.title)}</strong><span class="brand-sub">${esc(SITE.subtitle)}</span></span></a>
+          <a class="brand" href="#overview" data-act="tab" data-tab="overview"><span class="brand-mark"><svg class="logo-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="2,12.5 6.5,12.5 9,6.5 12.5,18 15.5,4.5 17.5,12.5 22,12.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-txt"><strong>${esc(SITE.title)}</strong><span class="brand-sub">${esc(SITE.subtitle)}</span></span></a>
           <div class="search" role="search">
             <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.6 3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search, or type a command: TOP, WEI, ECO, TECH, SCM" aria-label="Search markets and headlines, or type a command" aria-controls="q-results" aria-expanded="false">
@@ -412,14 +412,14 @@
     const g = new Date(D.meta.generated_at), h = healthSummary();
     $("#label").innerHTML = `
       <div class="lb-top">
-        <div class="lb-pharm"><span class="lb-mark"><span class="rx" aria-hidden="true">R<i>x</i></span></span><div><strong>${esc(SITE.title)} daily brief</strong><span class="lb-sub">${esc(SITE.subtitle)}</span></div></div>
-        <dl class="lb-meta"><div><dt>Rx#</dt><dd>${esc(D.meta.build_id)}</dd></div><div><dt>Filled</dt><dd>${esc(F.dayTime.format(g))} ${esc(tzAbbr())}</dd></div></dl>
+        <div class="lb-pharm"><span class="lb-mark"><svg class="logo-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="2,12.5 6.5,12.5 9,6.5 12.5,18 15.5,4.5 17.5,12.5 22,12.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>${esc(SITE.title)} daily brief</strong><span class="lb-sub">${esc(SITE.subtitle)}</span></div></div>
+        <dl class="lb-meta"><div><dt>Edition</dt><dd>${esc(D.meta.build_id)}</dd></div><div><dt>Published</dt><dd>${esc(F.dayTime.format(g))} ${esc(tzAbbr())}</dd></div></dl>
       </div>
       <h1 class="lb-drug">${esc(F.long.format(g))}</h1>
-      <div class="lb-sig"><span class="lb-sig-k">Sig:</span><ul>${D.brief.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
+      <div class="lb-sig"><span class="lb-sig-k">Brief</span><ul>${D.brief.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
       <dl class="lb-foot">
-        <div><dt>Qty</dt><dd>${D.news.length} stories</dd></div>
-        <div><dt>Refills</dt><dd>${esc(SITE.refresh_note || "Scheduled")}</dd></div>
+        <div><dt>Stories</dt><dd>${D.news.length}</dd></div>
+        <div><dt>Updates</dt><dd>${esc(SITE.refresh_note || "Scheduled")}</dd></div>
         <div><dt>Sources</dt><dd>${h.good} of ${h.total} healthy</dd></div>
         <div><dt>Compiled by</dt><dd>${esc(SITE.author || "")}</dd></div>
       </dl>
