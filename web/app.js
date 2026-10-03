@@ -830,8 +830,8 @@
       else out.push(`Crude is ${sgn(w, 0)} year over year, while drug manufacturing prices are ${sgn(ph, 1)}.`);
     }
     if (rx != null && mg != null) {
-      out.push(mg < 0 ? `Pharmacy dispensing margins are shrinking (${sgn(mg, 1)}) even as consumer prescription prices rise ${sgn(rx, 1)}.`
-        : `Pharmacy dispensing margins are ${sgn(mg, 1)} year over year, against consumer prescription prices at ${sgn(rx, 1)}.`);
+      out.push(mg < 0 ? `Pharmacy dispensing margins are shrinking (${sgn(mg, 1)}) even as consumer prescription and medical goods prices rise ${sgn(rx, 1)}.`
+        : `Pharmacy dispensing margins are ${sgn(mg, 1)} year over year, against consumer prescription and medical goods prices at ${sgn(rx, 1)}.`);
     }
     return out.join(" ");
   }
@@ -847,7 +847,7 @@
       </div>
       <div class="grid g-2">
         ${card("Lead times", `<div class="ll-pick" id="ll-pick"></div><div id="ll-body"></div>`, { sub: "does one series move first?" })}
-        ${card("Drug and pharmacy price trends", `<div class="series-chips chips ctl-row" role="group" aria-label="Series" id="yoy-chips"></div><div id="yoy-chart"></div><p class="note">Year-over-year % change, monthly. Consumer Rx prices (CPI) track retail prescriptions; producer indexes (PPI) track manufacturer and pharmacy margins.</p>`)}
+        ${card("Drug and pharmacy price trends", `<div class="series-chips chips ctl-row" role="group" aria-label="Series" id="yoy-chips"></div><div id="yoy-chart"></div><p class="note">Year-over-year % change, monthly. The consumer index here covers medical goods, mostly prescription drugs; producer indexes (PPI) track manufacturer prices and pharmacy margins.</p>`)}
       </div>`;
     $("#e-rebase").addEventListener("change", e => { S.energy.rebase = e.target.checked; drawEnergy(); });
     drawEnergy(); renderCorr(); renderLeadLag(); drawYoy();
@@ -1066,7 +1066,7 @@
       return `<div class="cell"><div class="l">${esc(lbl)}</div><div class="v">${v}</div><div class="s">${esc(sub)}</div></div>`;
     };
     el.innerHTML = `
-      <div class="strip">${cell("ust10", "10-year Treasury")}${cell("fedfunds", "Fed funds rate")}${cell("cpi_all", "All-items inflation", "yoy")}${cell("cpi_medical", "Medical care inflation", "yoy")}${cell("cpi_rx", "Rx drug inflation", "yoy")}${cell("unrate", "Unemployment")}${cell("t10y2y", "10y minus 2y")}${cell("hy_spread", "High-yield spread")}${cell("retail_hpc", "Health store sales")}${cell("emp_pharmacy", "Pharmacy jobs")}</div>
+      <div class="strip">${cell("ust10", "10-year Treasury")}${cell("fedfunds", "Fed funds rate")}${cell("cpi_all", "All-items inflation", "yoy")}${cell("cpi_medical", "Medical care inflation", "yoy")}${cell("cpi_rx", "Rx drug inflation", "yoy")}${cell("unrate", "Unemployment")}${cell("t10y2y", "10y minus 2y")}${cell("hy_spread", "High-yield spread")}${cell("retail_hpc", "Health store sales")}${cell("pharm_sales", "Pharmacy sales")}</div>
       <div class="grid g-2">
         ${card("Inflation", `<div id="m-infl"></div>`, { sub: "year-over-year % change, monthly" })}
         ${card("Interest rates", `<div id="m-rates"></div>`, { sub: "financing costs for pharmacy operators and acquirers" })}
@@ -1074,7 +1074,7 @@
         ${m.hy_spread ? card("Credit stress", `<div id="m-hy"></div>`, { sub: "high-yield bond spread over Treasuries; rising means more stress" }) : ""}
         ${m.unrate ? card("Unemployment rate", `<div id="m-unrate"></div>`, { sub: "monthly, seasonally adjusted" }) : ""}
         ${m.freight_tsi || m.indpro ? card("Freight and industry", `<div id="m-freight"></div>`, { sub: "freight services and industrial production, rebased to 100" }) : ""}
-        ${card("Pharmacy and drug store jobs", `<div id="m-jobs"></div>`, { sub: "thousands, seasonally adjusted" })}
+        ${card("Pharmacy and drug store sales", `<div id="m-jobs"></div>`, { sub: "monthly, $ millions, not seasonally adjusted (December spikes are normal)" })}
         ${card("Health and personal care store sales", `<div id="m-hpc"></div>`, { sub: "monthly, $ millions" })}
       </div>`;
     const Y = D.costs.yoy, t = Y.dates.map(dms);
@@ -1091,8 +1091,8 @@
     if (ur) lineChart($("#m-unrate"), { series: [ur], height: 220, fmt: "pct", monthly: true, label: "Unemployment rate" });
     const fr = [lvl("freight_tsi", cssv("--amber")), lvl("indpro", cssv("--teal"))].filter(Boolean);
     if (fr.length) lineChart($("#m-freight"), { series: fr, height: 220, rebase: true, monthly: true, legend: true, label: "Freight and industry" });
-    const jobs = lvl("emp_pharmacy", cssv("--teal"));
-    if (jobs) lineChart($("#m-jobs"), { series: [jobs], height: 220, area: true, fmt: "k", monthly: true, label: "Pharmacy jobs" });
+    const jobs = lvl("pharm_sales", cssv("--teal"));
+    if (jobs) lineChart($("#m-jobs"), { series: [jobs], height: 220, area: true, fmt: "musd", monthly: true, label: "Pharmacy sales" });
     const hpc = lvl("retail_hpc", cssv("--amber"));
     if (hpc) lineChart($("#m-hpc"), { series: [hpc], height: 220, area: true, fmt: "musd", monthly: true, label: "Health store sales" });
   }
