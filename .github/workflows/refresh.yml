@@ -1,0 +1,91 @@
+name: Refresh dashboard
+
+# Times are UTC. Weekdays 13:00–21:45 UTC covers the US trading day
+# (8:00 AM–4:45 PM Central in daylight time). Outside that, every 3 hours
+# keeps news and FDA data fresh. GitHub may delay scheduled runs by a few
+# minutes when its runners are busy.
+on:
+  schedule:
+    - cron: "*/15 13-21 * * 1-5"
+    - cron: "7 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["config.yaml", "build.py", "rxpulse/**", "web/**", ".github/workflows/refresh.yml"]
+
+permissions:
+  contents: write     # commit the daily history snapshot
+  pages: write        # publish to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: rxpulse-refresh
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Restore last-known-good data
+        uses: actions/cache/restore@v4
+        with:
+          path: data/cache
+          key: rxpulse-cache-${{ github.run_id }}
+          restore-keys: rxpulse-cache-
+
+      - name: Decide whether to snapshot
+        id: snap
+        run: |
+          # One history file per day, written by the first run after 21:00 UTC (market close)
+          f="data/history/$(date -u +%F).json"
+          if [ ! -f "$f" ] && [ "$(date -u +%H)" -ge 21 ]; then echo "flag=--snapshot" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Build site
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          OPENFDA_API_KEY: ${{ secrets.OPENFDA_API_KEY }}
+          TIINGO_API_KEY: ${{ secrets.TIINGO_API_KEY }}
+        run: python build.py ${{ steps.snap.outputs.flag }}
+
+      - name: Save data cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/cache
+          key: rxpulse-cache-${{ github.run_id }}
+
+      - name: Commit daily snapshot
+        if: steps.snap.outputs.flag != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history
+          git diff --cached --quiet || git commit -m "Daily snapshot $(date -u +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
