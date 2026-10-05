@@ -1,0 +1,1157 @@
+{
+ "generated_at": "2026-10-05T21:59:36Z",
+ "tickers": {
+  "^GSPC": {
+   "px": 7773.95,
+   "chgp": 0.6634,
+   "r1m": 0.3387,
+   "rytd": 13.56,
+   "vr": 0.671,
+   "news": 0
+  },
+  "^NDX": {
+   "px": 31076.4,
+   "chgp": 0.8716,
+   "r1m": 5.407,
+   "rytd": 23.08,
+   "vr": 0.19,
+   "news": 0
+  },
+  "^DJI": {
+   "px": 51267.9,
+   "chgp": 0.1777,
+   "r1m": -4.504,
+   "rytd": 6.667,
+   "vr": 1.07,
+   "news": 0
+  },
+  "^RUT": {
+   "px": 2847.14,
+   "chgp": 0.5025,
+   "r1m": -4.081,
+   "rytd": 14.72,
+   "vr": null,
+   "news": 0
+  },
+  "^VIX": {
+   "px": 15.52,
+   "chgp": 1.372,
+   "r1m": 6.813,
+   "rytd": 3.813,
+   "vr": null,
+   "news": 0
+  },
+  "^STOXX50E": {
+   "px": 6242.14,
+   "chgp": 0.05835,
+   "r1m": -2.359,
+   "rytd": 7.693,
+   "vr": null,
+   "news": 0
+  },
+  "^FTSE": {
+   "px": 10497.9,
+   "chgp": 0.3435,
+   "r1m": -3.076,
+   "rytd": 5.705,
+   "vr": null,
+   "news": 0
+  },
+  "^N225": {
+   "px": 68309.5,
+   "chgp": -0.9386,
+   "r1m": 3.012,
+   "rytd": 35.7,
+   "vr": 1.13,
+   "news": 0
+  },
+  "^HSI": {
+   "px": 23972.3,
+   "chgp": -2.604,
+   "r1m": -5.29,
+   "rytd": -6.47,
+   "vr": 0.767,
+   "news": 0
+  },
+  "^IRX": {
+   "px": 4.018,
+   "chgp": 0.6261,
+   "r1m": 7.433,
+   "rytd": 13.28,
+   "vr": null,
+   "news": 0
+  },
+  "^FVX": {
+   "px": 5.066,
+   "chgp": 0.2176,
+   "r1m": 12.35,
+   "rytd": 36.11,
+   "vr": null,
+   "news": 0
+  },
+  "^TNX": {
+   "px": 5.311,
+   "chgp": 0.6443,
+   "r1m": 11.53,
+   "rytd": 27.58,
+   "vr": null,
+   "news": 0
+  },
+  "^TYX": {
+   "px": 5.665,
+   "chgp": 0.6217,
+   "r1m": 8.049,
+   "rytd": 17.05,
+   "vr": null,
+   "news": 0
+  },
+  "DX-Y.NYB": {
+   "px": 102.119,
+   "chgp": 0.1854,
+   "r1m": 3.151,
+   "rytd": 3.906,
+   "vr": null,
+   "news": 0
+  },
+  "EURUSD=X": {
+   "px": 1.1225,
+   "chgp": -0.2222,
+   "r1m": -3.466,
+   "rytd": -4.444,
+   "vr": null,
+   "news": 0
+  },
+  "USDJPY=X": {
+   "px": 157.905,
+   "chgp": -0.01393,
+   "r1m": 1.442,
+   "rytd": 0.9539,
+   "vr": null,
+   "news": 0
+  },
+  "GBPUSD=X": {
+   "px": 1.322,
+   "chgp": 0.1515,
+   "r1m": -2.306,
+   "rytd": -1.834,
+   "vr": null,
+   "news": 0
+  },
+  "USDCNY=X": {
+   "px": 6.704,
+   "chgp": -0.007458,
+   "r1m": -0.2232,
+   "rytd": -4.175,
+   "vr": null,
+   "news": 0
+  },
+  "BTC-USD": {
+   "px": 85953.7,
+   "chgp": -0.609,
+   "r1m": 9.967,
+   "rytd": -1.777,
+   "vr": 1.01,
+   "news": 0
+  },
+  "ETH-USD": {
+   "px": 2718.39,
+   "chgp": -0.2978,
+   "r1m": 8.113,
+   "rytd": -8.38,
+   "vr": 0.958,
+   "news": 0
+  },
+  "XLK": {
+   "px": 200.93,
+   "chgp": 0.5605,
+   "r1m": 8.17,
+   "rytd": 40.07,
+   "vr": 0.895,
+   "news": 0
+  },
+  "XLF": {
+   "px": 53.88,
+   "chgp": 0.7291,
+   "r1m": -7.666,
+   "rytd": -0.4217,
+   "vr": 0.756,
+   "news": 0
+  },
+  "XLV": {
+   "px": 167.37,
+   "chgp": 0.7161,
+   "r1m": -3.03,
+   "rytd": 9.461,
+   "vr": 0.896,
+   "news": 0
+  },
+  "XLY": {
+   "px": 110.42,
+   "chgp": 0.3453,
+   "r1m": -4.978,
+   "rytd": -6.954,
+   "vr": 1.05,
+   "news": 0
+  },
+  "XLC": {
+   "px": 111.61,
+   "chgp": 1.169,
+   "r1m": -1.237,
+   "rytd": -4.326,
+   "vr": 1.05,
+   "news": 0
+  },
+  "XLI": {
+   "px": 170.1,
+   "chgp": 0.08826,
+   "r1m": -2.293,
+   "rytd": 10.53,
+   "vr": 0.85,
+   "news": 0
+  },
+  "XLP": {
+   "px": 81.04,
+   "chgp": 0.6333,
+   "r1m": -4.324,
+   "rytd": 6.335,
+   "vr": 0.827,
+   "news": 0
+  },
+  "XLE": {
+   "px": 63.45,
+   "chgp": 1.003,
+   "r1m": -1.227,
+   "rytd": 44.73,
+   "vr": 0.848,
+   "news": 0
+  },
+  "XLU": {
+   "px": 39.97,
+   "chgp": 0.3515,
+   "r1m": -6.428,
+   "rytd": -4.417,
+   "vr": 1.29,
+   "news": 0
+  },
+  "XLB": {
+   "px": 49.5,
+   "chgp": 1.31,
+   "r1m": -5.496,
+   "rytd": 10.55,
+   "vr": 1.16,
+   "news": 0
+  },
+  "XLRE": {
+   "px": 40.67,
+   "chgp": -0.3431,
+   "r1m": -7.317,
+   "rytd": 3.221,
+   "vr": 1.53,
+   "news": 0
+  },
+  "NVDA": {
+   "px": 238.9,
+   "chgp": 2.116,
+   "r1m": 4.691,
+   "rytd": 28.4,
+   "vr": 1.15,
+   "news": 39
+  },
+  "MSFT": {
+   "px": 525.18,
+   "chgp": 1.478,
+   "r1m": 2.952,
+   "rytd": 9.282,
+   "vr": 1.24,
+   "news": 4
+  },
+  "AAPL": {
+   "px": 332.89,
+   "chgp": -0.2397,
+   "r1m": 1.426,
+   "rytd": 22.78,
+   "vr": 0.813,
+   "news": 1
+  },
+  "GOOGL": {
+   "px": 346.47,
+   "chgp": 0.8646,
+   "r1m": 1.23,
+   "rytd": 10.91,
+   "vr": 0.913,
+   "news": 10
+  },
+  "META": {
+   "px": 741.9,
+   "chgp": 1.898,
+   "r1m": 21.58,
+   "rytd": 12.68,
+   "vr": 0.624,
+   "news": 5
+  },
+  "AVGO": {
+   "px": 362.51,
+   "chgp": 2.075,
+   "r1m": 1.683,
+   "rytd": 5.319,
+   "vr": 0.853,
+   "news": 5
+  },
+  "TSM": {
+   "px": 485.8,
+   "chgp": 2.754,
+   "r1m": 16.81,
+   "rytd": 61.12,
+   "vr": 1.07,
+   "news": 1
+  },
+  "AMD": {
+   "px": 631.75,
+   "chgp": -0.3407,
+   "r1m": 38.49,
+   "rytd": 195.0,
+   "vr": 0.599,
+   "news": 5
+  },
+  "TSLA": {
+   "px": 378.73,
+   "chgp": 2.196,
+   "r1m": 0.627,
+   "rytd": -15.79,
+   "vr": 1.1,
+   "news": 0
+  },
+  "ORCL": {
+   "px": 142.48,
+   "chgp": 0.1265,
+   "r1m": -7.505,
+   "rytd": -26.19,
+   "vr": 0.469,
+   "news": 1
+  },
+  "UPS": {
+   "px": 93.14,
+   "chgp": 0.129,
+   "r1m": -10.01,
+   "rytd": -1.641,
+   "vr": 0.995,
+   "news": 0
+  },
+  "FDX": {
+   "px": 289.13,
+   "chgp": -0.4236,
+   "r1m": -10.5,
+   "rytd": 25.68,
+   "vr": 1.14,
+   "news": 0
+  },
+  "UNP": {
+   "px": 277.06,
+   "chgp": -0.4384,
+   "r1m": -4.181,
+   "rytd": 21.59,
+   "vr": 0.899,
+   "news": 0
+  },
+  "CHRW": {
+   "px": 140.61,
+   "chgp": -10.85,
+   "r1m": -3.731,
+   "rytd": -11.55,
+   "vr": 6.0,
+   "news": 6
+  },
+  "EXPD": {
+   "px": 194.12,
+   "chgp": 0.8573,
+   "r1m": 3.735,
+   "rytd": 30.94,
+   "vr": 1.51,
+   "news": 0
+  },
+  "JBHT": {
+   "px": 229.74,
+   "chgp": -1.904,
+   "r1m": -13.72,
+   "rytd": 18.87,
+   "vr": 0.659,
+   "news": 0
+  },
+  "ODFL": {
+   "px": 179.37,
+   "chgp": -0.615,
+   "r1m": -3.435,
+   "rytd": 14.88,
+   "vr": 0.967,
+   "news": 0
+  },
+  "XPO": {
+   "px": 182.86,
+   "chgp": -1.736,
+   "r1m": -1.05,
+   "rytd": 34.54,
+   "vr": 1.21,
+   "news": 0
+  },
+  "MATX": {
+   "px": 230.66,
+   "chgp": -0.1947,
+   "r1m": 3.775,
+   "rytd": 87.82,
+   "vr": 0.883,
+   "news": 0
+  },
+  "ZIM": {
+   "px": 28.93,
+   "chgp": -2.362,
+   "r1m": 4.857,
+   "rytd": 40.87,
+   "vr": 0.944,
+   "news": 1
+  },
+  "CVS": {
+   "px": 87.01,
+   "chgp": 0.6361,
+   "r1m": -10.48,
+   "rytd": 12.2,
+   "vr": 1.51,
+   "news": 1
+  },
+  "CI": {
+   "px": 271.29,
+   "chgp": 0.2809,
+   "r1m": -4.703,
+   "rytd": 0.2394,
+   "vr": 0.901,
+   "news": 0
+  },
+  "UNH": {
+   "px": 378.58,
+   "chgp": 1.796,
+   "r1m": -4.995,
+   "rytd": 16.95,
+   "vr": 1.1,
+   "news": 2
+  },
+  "ELV": {
+   "px": 394.51,
+   "chgp": 2.091,
+   "r1m": -4.473,
+   "rytd": 14.19,
+   "vr": 0.568,
+   "news": 2
+  },
+  "HUM": {
+   "px": 404.07,
+   "chgp": 4.045,
+   "r1m": -0.6027,
+   "rytd": 58.94,
+   "vr": 1.44,
+   "news": 0
+  },
+  "MCK": {
+   "px": 915.45,
+   "chgp": 1.46,
+   "r1m": -0.6436,
+   "rytd": 11.94,
+   "vr": 0.793,
+   "news": 0
+  },
+  "COR": {
+   "px": 314.93,
+   "chgp": 1.903,
+   "r1m": -6.61,
+   "rytd": -6.2,
+   "vr": 0.82,
+   "news": 2
+  },
+  "CAH": {
+   "px": 233.12,
+   "chgp": 2.111,
+   "r1m": -6.013,
+   "rytd": 14.51,
+   "vr": 0.908,
+   "news": 0
+  },
+  "WMT": {
+   "px": 105.07,
+   "chgp": 0.7769,
+   "r1m": -3.09,
+   "rytd": -5.09,
+   "vr": 0.86,
+   "news": 2
+  },
+  "AMZN": {
+   "px": 251.4,
+   "chgp": -0.04771,
+   "r1m": -2.897,
+   "rytd": 8.916,
+   "vr": 1.08,
+   "news": 1
+  },
+  "KR": {
+   "px": 58.78,
+   "chgp": -0.4235,
+   "r1m": 0.4615,
+   "rytd": -4.3,
+   "vr": 0.73,
+   "news": 0
+  },
+  "COST": {
+   "px": 923.52,
+   "chgp": 0.3117,
+   "r1m": -0.2042,
+   "rytd": 7.567,
+   "vr": 0.811,
+   "news": 2
+  },
+  "HIMS": {
+   "px": 29.67,
+   "chgp": 2.31,
+   "r1m": 6.65,
+   "rytd": -8.623,
+   "vr": 0.832,
+   "news": 0
+  },
+  "GDRX": {
+   "px": 3.36,
+   "chgp": 2.439,
+   "r1m": -4.816,
+   "rytd": 23.99,
+   "vr": 1.04,
+   "news": 0
+  },
+  "OPCH": {
+   "px": 23.37,
+   "chgp": 3.224,
+   "r1m": -4.456,
+   "rytd": -26.65,
+   "vr": 1.24,
+   "news": 0
+  },
+  "OMCL": {
+   "px": 34.64,
+   "chgp": 3.095,
+   "r1m": -0.5169,
+   "rytd": -23.53,
+   "vr": 0.744,
+   "news": 0
+  },
+  "BDX": {
+   "px": 180.67,
+   "chgp": 2.189,
+   "r1m": -3.136,
+   "rytd": 20.72,
+   "vr": 0.886,
+   "news": 1
+  },
+  "VEEV": {
+   "px": 283.45,
+   "chgp": 3.702,
+   "r1m": -0.327,
+   "rytd": 26.98,
+   "vr": 0.877,
+   "news": 0
+  },
+  "WAY": {
+   "px": 26.48,
+   "chgp": 6.731,
+   "r1m": 1.534,
+   "rytd": -19.15,
+   "vr": 1.73,
+   "news": 0
+  },
+  "LLY": {
+   "px": 1143.12,
+   "chgp": 0.02363,
+   "r1m": -1.421,
+   "rytd": 6.882,
+   "vr": 0.876,
+   "news": 5
+  },
+  "NVO": {
+   "px": 37.54,
+   "chgp": 0.5895,
+   "r1m": -20.99,
+   "rytd": -22.54,
+   "vr": 1.28,
+   "news": 5
+  },
+  "PFE": {
+   "px": 27.41,
+   "chgp": -1.403,
+   "r1m": -4.859,
+   "rytd": 15.76,
+   "vr": 1.01,
+   "news": 4
+  },
+  "MRK": {
+   "px": 139.54,
+   "chgp": -3.299,
+   "r1m": -7.862,
+   "rytd": 35.3,
+   "vr": 0.964,
+   "news": 4
+  },
+  "ABBV": {
+   "px": 265.76,
+   "chgp": 1.119,
+   "r1m": 2.133,
+   "rytd": 19.06,
+   "vr": 1.76,
+   "news": 2
+  },
+  "JNJ": {
+   "px": 252.93,
+   "chgp": -1.211,
+   "r1m": -9.158,
+   "rytd": 24.18,
+   "vr": 1.37,
+   "news": 2
+  },
+  "TEVA": {
+   "px": 39.66,
+   "chgp": 0.3289,
+   "r1m": 8.301,
+   "rytd": 27.07,
+   "vr": 0.783,
+   "news": 1
+  },
+  "VTRS": {
+   "px": 17.62,
+   "chgp": 0.1136,
+   "r1m": 4.014,
+   "rytd": 44.86,
+   "vr": 0.704,
+   "news": 0
+  },
+  "AMRX": {
+   "px": 20.35,
+   "chgp": 0.2463,
+   "r1m": 13.88,
+   "rytd": 61.51,
+   "vr": 1.09,
+   "news": 0
+  },
+  "SPY": {
+   "px": 774.83,
+   "chgp": 0.6743,
+   "r1m": 0.4636,
+   "rytd": 14.51,
+   "vr": 0.958,
+   "news": 0
+  },
+  "XPH": {
+   "px": 63.66,
+   "chgp": 0.03143,
+   "r1m": -10.32,
+   "rytd": 13.97,
+   "vr": 2.28,
+   "news": 0
+  },
+  "IHF": {
+   "px": 56.04,
+   "chgp": 1.724,
+   "r1m": -3.157,
+   "rytd": 17.64,
+   "vr": 2.11,
+   "news": 0
+  },
+  "IBB": {
+   "px": 207.96,
+   "chgp": 1.301,
+   "r1m": -2.731,
+   "rytd": 23.33,
+   "vr": 1.0,
+   "news": 0
+  },
+  "CL=F": {
+   "px": 89.3,
+   "chgp": -1.987,
+   "r1m": -2.191,
+   "rytd": 55.52,
+   "vr": 0.746,
+   "news": 0
+  },
+  "BZ=F": {
+   "px": 100.32,
+   "chgp": -1.888,
+   "r1m": 5.025,
+   "rytd": 64.86,
+   "vr": 0.813,
+   "news": 0
+  },
+  "HO=F": {
+   "px": 4.5082,
+   "chgp": 0.1577,
+   "r1m": -1.859,
+   "rytd": 112.6,
+   "vr": 0.862,
+   "news": 0
+  },
+  "NG=F": {
+   "px": 3.08,
+   "chgp": 1.483,
+   "r1m": 5.733,
+   "rytd": -16.44,
+   "vr": 0.918,
+   "news": 0
+  },
+  "GC=F": {
+   "px": 4167.6,
+   "chgp": 0.1273,
+   "r1m": -8.201,
+   "rytd": -3.997,
+   "vr": 0.646,
+   "news": 0
+  },
+  "SI=F": {
+   "px": 61.4,
+   "chgp": 2.373,
+   "r1m": -8.321,
+   "rytd": -12.45,
+   "vr": 134.0,
+   "news": 0
+  },
+  "HG=F": {
+   "px": 6.6325,
+   "chgp": 2.164,
+   "r1m": 0.8438,
+   "rytd": 17.81,
+   "vr": 18.4,
+   "news": 0
+  }
+ },
+ "macro": {
+  "wti": {
+   "last": 96.16,
+   "last_date": "2026-09-29",
+   "yoy": 55.98
+  },
+  "brent": {
+   "last": 113.96,
+   "last_date": "2026-09-29",
+   "yoy": 72.33
+  },
+  "diesel": {
+   "last": 6.382,
+   "last_date": "2026-09-28",
+   "yoy": 70.01
+  },
+  "gasoline": {
+   "last": 4.465,
+   "last_date": "2026-09-28",
+   "yoy": 43.2
+  },
+  "natgas": {
+   "last": 3.18,
+   "last_date": "2026-09-29",
+   "yoy": -0.3135
+  },
+  "ppi_freight": {
+   "last": 213.299,
+   "last_date": "2026-08-01",
+   "yoy": 11.64
+  },
+  "ppi_pharma": {
+   "last": 929.212,
+   "last_date": "2026-08-01",
+   "yoy": 1.185
+  },
+  "ppi_rx_retail": {
+   "last": 171.716,
+   "last_date": "2026-08-01",
+   "yoy": 1.07
+  },
+  "cpi_rx": {
+   "last": 405.528,
+   "last_date": "2026-08-01",
+   "yoy": -2.686
+  },
+  "cpi_medical": {
+   "last": 592.934,
+   "last_date": "2026-08-01",
+   "yoy": 1.563
+  },
+  "cpi_all": {
+   "last": 334.131,
+   "last_date": "2026-08-01",
+   "yoy": 3.353
+  },
+  "retail_hpc": {
+   "last": 39216.0,
+   "last_date": "2026-08-01",
+   "yoy": -0.6813
+  },
+  "pharm_sales": {
+   "last": 34722.0,
+   "last_date": "2026-07-01",
+   "yoy": 0.176
+  },
+  "ust10": {
+   "last": 5.28,
+   "last_date": "2026-10-02",
+   "yoy": 27.54
+  },
+  "fedfunds": {
+   "last": 3.88,
+   "last_date": "2026-10-02",
+   "yoy": -5.134
+  },
+  "unrate": {
+   "last": 4.2,
+   "last_date": "2026-09-01",
+   "yoy": -4.545
+  },
+  "t10y2y": {
+   "last": 0.47,
+   "last_date": "2026-10-05",
+   "yoy": -11.32
+  },
+  "hy_spread": {
+   "last": 3.1,
+   "last_date": "2026-10-02",
+   "yoy": 9.929
+  },
+  "freight_tsi": {
+   "last": 135.7,
+   "last_date": "2026-07-01",
+   "yoy": -2.022
+  },
+  "indpro": {
+   "last": 103.068,
+   "last_date": "2026-08-01",
+   "yoy": 1.42
+  }
+ },
+ "fda": {
+  "shortage_drugs": 67,
+  "recalls_by_class": {
+   "Class I": 6,
+   "Class II": 38,
+   "Class III": 6,
+   "Not Yet Classified": 1
+  }
+ },
+ "top_news": [
+  {
+   "title": "Over 122K cases of Gatorade recalled due to undeclared food dyes, FDA says",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNnpyMUxSRVkyX3loSDB0N0VhTWFZbFVEczI3T2taLWNVci1ySFo5dWEtQ3RGZFFKODhudmVTSkV5WUt4Z1FZRFlXcV93cjEySE5ya3FaMDNDNXZWUFhxZ0k4b3QxZTA4ZlZEYTRIdTdEZjhsTVZnSFdfUjRfY0hIc1hoMXY4SFVsUG1VTEFkZUk2REFKX281ZjR3cnpmdi1jYnRR0gGoAUFVX3lxTE9XaFl6TDdra3FTY012dHZqYlpBTDBiVzgzNlNZZkE5ZDN3Zko3YlFNdkRmVE91TlNHdHB1WnFkTHhjRjdiaUNtUUdsYXdqSGdVUHJOdE1BNHUwOGl5ZXpNRHVFMmxhXzFIbV9YdWtJd1dYT0ZSVFBCeXVGYmVvNHB4Sy1kbmk1X1Z6MHpNem9jMTVUQzRBeHF6V1lYN1hhZlhOelJ6R0tlMA?oc=5",
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "score": 100,
+   "cats": [
+    "fda"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Nvidia, Broadcom shielded as AI power crunch hits chip supply chain, says Morgan Stanley",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMF9lcTkxVU5OWUp5THhibUJWc3U0MWo5c2dreS02dFk3TGt4SlBXLVdpX0htOV85SnVsc3RUZjZJZDJac3p3bFgzS05uU2hjVXh5N0RjcFVtQml0TnBRSllwREVDdUVFOTBoTTRMT01RMnVUNGQtZk1ZY0ZIdUZHWHNBbjlaMk10dEpJZ3J5eTZHYjlDQW9JdEg4STBBLVNYNlFRb1J1aUJudHJkS2lmT0otSUJHdE5wVnJaXw?oc=5",
+   "source": "Reuters",
+   "score": 93,
+   "cats": [
+    "ai",
+    "freight"
+   ],
+   "tickers": [
+    "NVDA",
+    "AVGO"
+   ]
+  },
+  {
+   "title": "The Oral GLP-1 Tracker: Lilly's Foundayo surges as Novo's Wegovy pill stalls",
+   "url": "https://www.fiercepharma.com/pharma/oral-glp-1-tracker-launch-trajectories-lilly-foundayo-novo-wegovy-pill",
+   "source": "Fierce Pharma",
+   "score": 87,
+   "cats": [
+    "glp1",
+    "mkts"
+   ],
+   "tickers": [
+    "LLY",
+    "NVO"
+   ]
+  },
+  {
+   "title": "HRSA names 10 drugmakers for revised 340B rebate pilot ahead of 2027 launch",
+   "url": "https://www.fiercepharma.com/regulatory/hrsa-announces-drugmakers-products-revised-340b-rebate-pilot",
+   "source": "Fierce Pharma",
+   "score": 77,
+   "cats": [
+    "pbm",
+    "pricing"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "WVU Health System closes acquisition of 5-hospital Independence Health System",
+   "url": "https://www.fiercehealthcare.com/providers/western-pennylvanias-independence-health-system-join-wvu-health-system-2026",
+   "source": "Fierce Healthcare",
+   "score": 77,
+   "cats": [
+    "deals",
+    "mkts"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "The case for Nvidia’s stock to march even higher after clinching its first record high in months",
+   "url": "https://www.marketwatch.com/story/the-case-for-nvidias-stock-to-march-even-higher-after-clinching-its-first-record-high-in-months-2bb5a937?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "score": 77,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "Nasdaq closes at fresh record as tech shares rise and traders look past higher yields",
+   "url": "https://www.cnbc.com/2026/10/04/stock-market-today-live-updates.html",
+   "source": "CNBC Top News",
+   "score": 77,
+   "cats": [
+    "macro",
+    "mkts"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Fierce Pharma Asia—AZ’s $2B bet on ivonescimab; Novo buys Hengrui GLP-1; Merck doubles down on KRAS",
+   "url": "https://www.fiercepharma.com/pharma/astrazeneca-2b-bet-ivonescimab-novo-buys-hengrui-glp-1-merck-doubles-down-kras",
+   "source": "Fierce Pharma",
+   "score": 75,
+   "cats": [
+    "glp1"
+   ],
+   "tickers": [
+    "NVO",
+    "MRK"
+   ]
+  },
+  {
+   "title": "Nvidia's $20 billion Groq deal faces lawsuit alleging startup's stockholders were shortchanged",
+   "url": "https://www.cnbc.com/2026/10/05/nvidia-groq-deal-stockholder-lawsuit.html",
+   "source": "CNBC Top News",
+   "score": 71,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "The FDA Expands Recall on Frozen Berries Due to E. Coli—Sold at Walmart, Trader Joe’s and More",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUng4S2RkTy1teEpqbjYyRzAxekczNUhUNTNiZFZJTk9xOGN3RTBIRllhVU1IcDJ3NGZqUVZUakJXNkl1TnhGaTJDLWV0bWhlNjU0UkZLN0dEZlhzTlZxYjFBOFI4MTFxZGZmY0hUUHBDTEctc0RuRlE2WjY4WW15OEphOA?oc=5",
+   "source": "EatingWell",
+   "score": 69,
+   "cats": [
+    "fda"
+   ],
+   "tickers": [
+    "WMT"
+   ]
+  },
+  {
+   "title": "UPDATE: C.H. Robinson acquisition of RXO may give a jolt to industry consolidation",
+   "url": "https://www.freightwaves.com/news/breaking-c-h-robinson-acquiring-rxo",
+   "source": "FreightWaves",
+   "score": 69,
+   "cats": [
+    "deals"
+   ],
+   "tickers": [
+    "CHRW"
+   ]
+  },
+  {
+   "title": "Nvidia, Intel, Micron, XP Inc., PTC, Vaxcyte, Western Digital, and More Stocks That Explain Today’s Market",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2SkZNSmdPMzdVUnlaenp2eW9mOUNlM1JSTWQzM3BYdGMxcjhxOGQ0eFRMWEJFM2VfY1JnNHhlbTMyQ2lKN3hPZXNqVzhpbVlPTEJxcS1memo0cU5oTUtOYW55eGc?oc=5",
+   "source": "Barron's",
+   "score": 68,
+   "cats": [
+    "mkts",
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "CH Robinson to acquire RXO in $5.8bn deal",
+   "url": "https://theloadstar.com/ch-robinson-to-acquire-rxo-in-5-8bn-deal/",
+   "source": "The Loadstar",
+   "score": 68,
+   "cats": [
+    "deals",
+    "ai",
+    "freight"
+   ],
+   "tickers": [
+    "CHRW"
+   ]
+  },
+  {
+   "title": "FDA recalls 122,000 cases of Gatorade sold across 37 states",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdU9zYWs4Yk1OeTUxTWdtUFBKS2dDUXI5VnVYNDk4TV9lX1Q0UEFPai1qSTVoTkoyNFhoSVBCNHNnU2RJSnVnVjJmQ1ZVZUFwckkzR3U3OHZsX1hoOFR6TFM0N3NZWGk1X0RIQ0Q4QzJSY05mVERTbkpEYlo4c1RmVzlBRzJuX2F3TWZmTA?oc=5",
+   "source": "ABC7 Eyewitness News",
+   "score": 67,
+   "cats": [
+    "fda"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "C.H. Robinson Buys RXO: History’s Largest Brokerage Deal",
+   "url": "https://www.freightwaves.com/news/c-h-robinson-buys-rxo-historys-largest-brokerage-deal",
+   "source": "FreightWaves",
+   "score": 64,
+   "cats": [
+    "deals",
+    "freight"
+   ],
+   "tickers": [
+    "CHRW"
+   ]
+  },
+  {
+   "title": "AI stock Nvidia stock gets target upgrade from BNP Paribas; 47% further upside seen by experts - check revised price",
+   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPNnhMaEd0cjJFMVBHZ3ZQd1ZDZERaQjZuOTc3bVl0OXBndEVJdVZJOERuWGcyX1pZRnNMak9BaC1JRnNmQjFubmFYaVVaZ2tzUi11OXlIUlgxZGtaVlUxM2x5ZER2UGZ2UTVxZWJRWHhIcjJBMVI2R1dieGc3YkN1MjN1ZVo1RVZpWFotTDZEVWxHR2FFZnNBc1NPVkFKS1Fqamg5Q2lUbWE3YWpzWVpWXzkzbTBEX3ZuNXZpUHNTZVhzZVVnTkpmdjhWY1d2b1dFVTRrOUVyQzc0UFFwZnJySHVQWHgzQUtHTkV6ZF9TMEFWLUh1SFJzWUluNUV0blNMVkhJSG10c1h1SldEMktB0gGUAkFVX3lxTE5qU25CejFQdmNaM040enZnNjBFUW5VeGpXQkF6ZlFjd1ZFVEM3OHdzc0tydTJLNWJoczNKbWVhcnFIVmlmSUJWS0s2VkdGT250ZzM5RnZSaE1JRHFYLXNEN0lFY3JMUW8zUEJZMndMMjZvUlJaODBmbkhtWG1wQ2xEcEJCc25paExNZ0x1NkpkYnVKQjcxNTc4eXYxRjhzQmIyR1hpXzlaV2NfcWxRUHNoeTV3M21Qb01nVkc1TmxZVGtQeDhoUm9lSmk3S1IwcEhSM2pIMVRkb21QQzd2YXpsNUJTVUVlMEsySzBicXJxU3NabjZUZThRUFkxRXpSczRtMkh3MVYxbGNDQnlaLWZDWG9iVg?oc=5",
+   "source": "Livemint",
+   "score": 64,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "Norway plans temporary ban on smart glasses in some public places",
+   "url": "https://www.theguardian.com/world/2026/oct/05/norway-temporary-ban-smart-glasses-public-places",
+   "source": "The Guardian Business",
+   "score": 63,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "The Stock Market Dynamic Has Shifted, Just Look at Intel and Nvidia",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMVluVzVER3NydFdyRGFfYnRZcElBSVhRNGtIdmxFSi1KNDdtTm9adkJnN0RpcXozdFNScERaMTdndzR5VU1aYWdoVlZsYkNoNHAzbWJOUG52dGE5SF9ocFRMZmpJNDE0MEppMHBRZGxqTTNkSWRDOEpWUkUtcE5rdU9pWUhsUkxILVdzcHBlcUN2dw?oc=5",
+   "source": "Barron's",
+   "score": 63,
+   "cats": [
+    "mkts",
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "Vaxcyte skyrockets on ‘near best-case’ pneumococcal vaccine data",
+   "url": "https://www.biopharmadive.com/news/vaxcyte-pneumococcal-vaccine-opus-study-results-prevnar-capvaxive/832095/",
+   "source": "BioPharma Dive",
+   "score": 63,
+   "cats": [
+    "mkts"
+   ],
+   "tickers": [
+    "PFE",
+    "MRK"
+   ]
+  },
+  {
+   "title": "Nvidia’s $20bn Groq deal faces lawsuit from former engineers over transfer of key tech, talent: Report",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPclBGZVAtSV9MN0Q2cnlaQ1JRV3pnUDBmY1RlT2stczA3OTl3ZEhYT25nZ0gtTnZvUDBwd19MZ2RsWi1td3p2bDFoM1dEZE5KLVBzOE9obkx6cnFjWUhXWWlFeXdtdUZPMDBickNLS0twTEIwd1FXTkN4Y05tTzdHeEUxOEpKSzRDSkVITVV5eGRBT3ZEc2Nsb2FjdEpWUXBWQmx1bXhYZmYzU2FYRW4tR1ktWXpDX0NvV2syQkEwbjEweTZYclBjbXFUZDlyOWh6YWdWM05oYUtCWjRlaEtLUNIB4AFBVV95cUxPclBGZVAtSV9MN0Q2cnlaQ1JRV3pnUDBmY1RlT2stczA3OTl3ZEhYT25nZ0gtTnZvUDBwd19MZ2RsWi1td3p2bDFoM1dEZE5KLVBzOE9obkx6cnFjWUhXWWlFeXdtdUZPMDBickNLS0twTEIwd1FXTkN4Y05tTzdHeEUxOEpKSzRDSkVITVV5eGRBT3ZEc2Nsb2FjdEpWUXBWQmx1bXhYZmYzU2FYRW4tR1ktWXpDX0NvV2syQkEwbjEweTZYclBjbXFUZDlyOWh6YWdWM05oYUtCWjRlaEtLUA?oc=5",
+   "source": "firstpost.com",
+   "score": 62,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "FTC sends price transparency warning letters to 24 large hospital systems",
+   "url": "https://www.fiercehealthcare.com/regulatory/ftc-sends-price-transparency-warning-letters-24-large-hospital-systems-price",
+   "source": "Fierce Healthcare",
+   "score": 61,
+   "cats": [
+    "pbm",
+    "pricing"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "This new AI model could help America close a technological gap with China",
+   "url": "https://www.marketwatch.com/story/this-new-ai-model-could-help-america-close-a-technological-gap-with-china-c1d74492?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "score": 61,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "Microsoft’s blazing stock comeback isn’t even close to being over, analyst says",
+   "url": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "score": 61,
+   "cats": [
+    "mkts",
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Nvidia’s Shield TV Pro just got a $100 price hike",
+   "url": "https://www.theverge.com/tech/1004791/nvidia-shield-tv-pro-streaming-box-price-increase",
+   "source": "The Verge",
+   "score": 61,
+   "cats": [
+    "supply",
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "STAT+: Pharmalittle: We’re reading about a Vaxcyte pneumococcal shot, increasing pharma M&A, and more",
+   "url": "https://www.statnews.com/pharmalot/2026/10/05/vaxcyte-pneumococcal-vaccine-rising-pharma-mergers-acquisitions/?utm_campaign=rss",
+   "source": "STAT",
+   "score": 61,
+   "cats": [
+    "general"
+   ],
+   "tickers": [
+    "PFE",
+    "MRK"
+   ]
+  }
+ ],
+ "brief": [
+  "US stocks: S&P 500 +0.66%, Nasdaq 100 +0.87%, Dow +0.18%.",
+  "10-year Treasury yield 5.31% (+3 bp); VIX 15.5; gold +0.1%; bitcoin -0.6%.",
+  "Health care outpaced the market: the sector moved +0.72% against +0.66% for the S&P 500.",
+  "Pharmacy tech and automation led the watchlist at +3.93%; Freight and logistics lagged at -1.75%.",
+  "Biggest single move: C.H. Robinson at -10.8%, with 6 related headlines.",
+  "WTI crude is $89.30, -2.0% on the day and +56% from a year ago.",
+  "Prescription drug and medical goods prices are running -2.7% year over year, while pharmacy dispensing margins sit at +1.1%.",
+  "FDA reports 67 drugs in active shortage and 6 Class I recalls in the last 30 days."
+ ]
+}
