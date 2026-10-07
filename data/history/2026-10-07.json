@@ -1,0 +1,1151 @@
+{
+ "generated_at": "2026-10-07T23:36:33Z",
+ "tickers": {
+  "^GSPC": {
+   "px": 7801.77,
+   "chgp": -0.2195,
+   "r1m": 1.671,
+   "rytd": 13.97,
+   "vr": 0.503,
+   "news": 0
+  },
+  "^NDX": {
+   "px": 31160.1,
+   "chgp": -0.2062,
+   "r1m": 5.6,
+   "rytd": 23.41,
+   "vr": 0.118,
+   "news": 0
+  },
+  "^DJI": {
+   "px": 51179.9,
+   "chgp": -0.6627,
+   "r1m": -3.043,
+   "rytd": 6.484,
+   "vr": 0.814,
+   "news": 0
+  },
+  "^RUT": {
+   "px": 2793.2,
+   "chgp": -1.311,
+   "r1m": -5.641,
+   "rytd": 12.54,
+   "vr": null,
+   "news": 0
+  },
+  "^VIX": {
+   "px": 15.08,
+   "chgp": 0.4664,
+   "r1m": -4.071,
+   "rytd": 0.8696,
+   "vr": null,
+   "news": 0
+  },
+  "^STOXX50E": {
+   "px": 6272.23,
+   "chgp": 0.482,
+   "r1m": -2.057,
+   "rytd": 8.212,
+   "vr": 0.898,
+   "news": 0
+  },
+  "^FTSE": {
+   "px": 10541.7,
+   "chgp": 0.4172,
+   "r1m": -2.591,
+   "rytd": 6.145,
+   "vr": 0.881,
+   "news": 0
+  },
+  "^N225": {
+   "px": 70684.0,
+   "chgp": 1.054,
+   "r1m": 9.885,
+   "rytd": 40.41,
+   "vr": 0.934,
+   "news": 0
+  },
+  "^HSI": {
+   "px": 24280.6,
+   "chgp": 0.9992,
+   "r1m": -5.342,
+   "rytd": -5.267,
+   "vr": 0.531,
+   "news": 0
+  },
+  "^IRX": {
+   "px": 4.037,
+   "chgp": 0.0,
+   "r1m": 6.94,
+   "rytd": 13.81,
+   "vr": null,
+   "news": 0
+  },
+  "^FVX": {
+   "px": 5.021,
+   "chgp": -0.1392,
+   "r1m": 9.797,
+   "rytd": 34.9,
+   "vr": null,
+   "news": 0
+  },
+  "^TNX": {
+   "px": 5.277,
+   "chgp": 0.1518,
+   "r1m": 9.8,
+   "rytd": 26.76,
+   "vr": null,
+   "news": 0
+  },
+  "^TYX": {
+   "px": 5.661,
+   "chgp": 0.3545,
+   "r1m": 7.542,
+   "rytd": 16.96,
+   "vr": null,
+   "news": 0
+  },
+  "DX-Y.NYB": {
+   "px": 102.25,
+   "chgp": 0.4125,
+   "r1m": 3.45,
+   "rytd": 4.039,
+   "vr": null,
+   "news": 0
+  },
+  "EURUSD=X": {
+   "px": 1.1206,
+   "chgp": -0.4265,
+   "r1m": -3.621,
+   "rytd": -4.605,
+   "vr": null,
+   "news": 0
+  },
+  "USDJPY=X": {
+   "px": 157.998,
+   "chgp": -0.1883,
+   "r1m": 2.945,
+   "rytd": 1.013,
+   "vr": null,
+   "news": 0
+  },
+  "GBPUSD=X": {
+   "px": 1.3218,
+   "chgp": -0.3693,
+   "r1m": -2.414,
+   "rytd": -1.849,
+   "vr": null,
+   "news": 0
+  },
+  "USDCNY=X": {
+   "px": 6.6948,
+   "chgp": -0.1447,
+   "r1m": -0.234,
+   "rytd": -4.307,
+   "vr": null,
+   "news": 0
+  },
+  "BTC-USD": {
+   "px": 83359.2,
+   "chgp": -2.569,
+   "r1m": 9.467,
+   "rytd": -4.742,
+   "vr": 1.24,
+   "news": 0
+  },
+  "ETH-USD": {
+   "px": 2575.7,
+   "chgp": -4.516,
+   "r1m": 6.605,
+   "rytd": -13.19,
+   "vr": 1.48,
+   "news": 0
+  },
+  "XLK": {
+   "px": 201.39,
+   "chgp": -0.302,
+   "r1m": 7.322,
+   "rytd": 40.39,
+   "vr": 0.864,
+   "news": 0
+  },
+  "XLF": {
+   "px": 53.75,
+   "chgp": -0.4814,
+   "r1m": -5.863,
+   "rytd": -0.662,
+   "vr": 0.96,
+   "news": 0
+  },
+  "XLV": {
+   "px": 168.81,
+   "chgp": 1.029,
+   "r1m": 1.392,
+   "rytd": 10.4,
+   "vr": 1.11,
+   "news": 0
+  },
+  "XLY": {
+   "px": 111.36,
+   "chgp": -0.3222,
+   "r1m": -2.092,
+   "rytd": -6.162,
+   "vr": 0.995,
+   "news": 0
+  },
+  "XLC": {
+   "px": 111.26,
+   "chgp": -0.3493,
+   "r1m": 0.09563,
+   "rytd": -4.626,
+   "vr": 0.695,
+   "news": 0
+  },
+  "XLI": {
+   "px": 167.84,
+   "chgp": -2.18,
+   "r1m": -3.514,
+   "rytd": 9.063,
+   "vr": 1.1,
+   "news": 0
+  },
+  "XLP": {
+   "px": 81.7,
+   "chgp": -0.1222,
+   "r1m": -2.122,
+   "rytd": 7.201,
+   "vr": 0.863,
+   "news": 0
+  },
+  "XLE": {
+   "px": 63.36,
+   "chgp": -0.6118,
+   "r1m": -1.596,
+   "rytd": 44.52,
+   "vr": 0.753,
+   "news": 0
+  },
+  "XLU": {
+   "px": 41.15,
+   "chgp": -0.0243,
+   "r1m": -4.597,
+   "rytd": -1.595,
+   "vr": 1.39,
+   "news": 0
+  },
+  "XLB": {
+   "px": 48.98,
+   "chgp": -1.508,
+   "r1m": -5.265,
+   "rytd": 9.391,
+   "vr": 0.827,
+   "news": 0
+  },
+  "XLRE": {
+   "px": 40.57,
+   "chgp": -1.29,
+   "r1m": -6.808,
+   "rytd": 2.967,
+   "vr": 1.46,
+   "news": 0
+  },
+  "NVDA": {
+   "px": 237.47,
+   "chgp": -0.7398,
+   "r1m": 5.319,
+   "rytd": 27.63,
+   "vr": 0.747,
+   "news": 62
+  },
+  "MSFT": {
+   "px": 529.76,
+   "chgp": 0.08691,
+   "r1m": 7.25,
+   "rytd": 10.24,
+   "vr": 0.736,
+   "news": 16
+  },
+  "AAPL": {
+   "px": 336.67,
+   "chgp": 0.9112,
+   "r1m": 6.467,
+   "rytd": 24.18,
+   "vr": 0.8,
+   "news": 2
+  },
+  "GOOGL": {
+   "px": 350.5,
+   "chgp": 0.8111,
+   "r1m": 3.588,
+   "rytd": 12.2,
+   "vr": 0.75,
+   "news": 10
+  },
+  "META": {
+   "px": 721.31,
+   "chgp": -2.378,
+   "r1m": 17.67,
+   "rytd": 9.556,
+   "vr": 0.547,
+   "news": 4
+  },
+  "AVGO": {
+   "px": 376.51,
+   "chgp": 0.1863,
+   "r1m": 2.343,
+   "rytd": 9.386,
+   "vr": 0.699,
+   "news": 5
+  },
+  "TSM": {
+   "px": 472.2,
+   "chgp": -2.094,
+   "r1m": 7.851,
+   "rytd": 56.61,
+   "vr": 0.737,
+   "news": 3
+  },
+  "AMD": {
+   "px": 645.86,
+   "chgp": -0.5482,
+   "r1m": 27.71,
+   "rytd": 201.6,
+   "vr": 0.831,
+   "news": 4
+  },
+  "TSLA": {
+   "px": 377.81,
+   "chgp": -0.7539,
+   "r1m": 2.621,
+   "rytd": -15.99,
+   "vr": 0.712,
+   "news": 2
+  },
+  "ORCL": {
+   "px": 143.56,
+   "chgp": -0.8358,
+   "r1m": -11.67,
+   "rytd": -25.64,
+   "vr": 0.446,
+   "news": 1
+  },
+  "UPS": {
+   "px": 92.29,
+   "chgp": -0.8807,
+   "r1m": -8.151,
+   "rytd": -2.539,
+   "vr": 1.05,
+   "news": 0
+  },
+  "FDX": {
+   "px": 289.04,
+   "chgp": 0.00346,
+   "r1m": -7.626,
+   "rytd": 25.64,
+   "vr": 0.764,
+   "news": 1
+  },
+  "UNP": {
+   "px": 274.68,
+   "chgp": -0.6977,
+   "r1m": -4.774,
+   "rytd": 20.54,
+   "vr": 0.669,
+   "news": 2
+  },
+  "CHRW": {
+   "px": 135.18,
+   "chgp": 0.09626,
+   "r1m": -9.94,
+   "rytd": -14.97,
+   "vr": 1.28,
+   "news": 2
+  },
+  "EXPD": {
+   "px": 190.85,
+   "chgp": -0.4953,
+   "r1m": 2.63,
+   "rytd": 28.74,
+   "vr": 0.74,
+   "news": 0
+  },
+  "JBHT": {
+   "px": 222.64,
+   "chgp": -1.456,
+   "r1m": -18.98,
+   "rytd": 15.2,
+   "vr": 0.561,
+   "news": 0
+  },
+  "ODFL": {
+   "px": 175.61,
+   "chgp": -1.354,
+   "r1m": -6.096,
+   "rytd": 12.47,
+   "vr": 0.903,
+   "news": 0
+  },
+  "XPO": {
+   "px": 180.36,
+   "chgp": -1.706,
+   "r1m": -5.104,
+   "rytd": 32.71,
+   "vr": 1.25,
+   "news": 0
+  },
+  "MATX": {
+   "px": 222.92,
+   "chgp": -0.8275,
+   "r1m": -0.1657,
+   "rytd": 81.52,
+   "vr": 0.738,
+   "news": 0
+  },
+  "ZIM": {
+   "px": 29.99,
+   "chgp": 2.705,
+   "r1m": -0.2992,
+   "rytd": 46.03,
+   "vr": 1.13,
+   "news": 7
+  },
+  "CVS": {
+   "px": 87.95,
+   "chgp": 1.759,
+   "r1m": -8.452,
+   "rytd": 13.41,
+   "vr": 0.978,
+   "news": 1
+  },
+  "CI": {
+   "px": 278.51,
+   "chgp": 1.509,
+   "r1m": 0.9716,
+   "rytd": 2.907,
+   "vr": 0.954,
+   "news": 1
+  },
+  "UNH": {
+   "px": 375.98,
+   "chgp": -0.09035,
+   "r1m": -5.624,
+   "rytd": 16.15,
+   "vr": 1.12,
+   "news": 3
+  },
+  "ELV": {
+   "px": 404.31,
+   "chgp": 1.055,
+   "r1m": 1.027,
+   "rytd": 17.03,
+   "vr": 0.733,
+   "news": 0
+  },
+  "HUM": {
+   "px": 396.51,
+   "chgp": -1.92,
+   "r1m": -1.632,
+   "rytd": 55.96,
+   "vr": 1.59,
+   "news": 0
+  },
+  "MCK": {
+   "px": 910.33,
+   "chgp": -1.23,
+   "r1m": 2.386,
+   "rytd": 11.31,
+   "vr": 0.916,
+   "news": 5
+  },
+  "COR": {
+   "px": 317.25,
+   "chgp": 0.2782,
+   "r1m": -2.291,
+   "rytd": -5.509,
+   "vr": 0.832,
+   "news": 0
+  },
+  "CAH": {
+   "px": 232.16,
+   "chgp": -0.5483,
+   "r1m": -3.239,
+   "rytd": 14.04,
+   "vr": 0.583,
+   "news": 1
+  },
+  "WMT": {
+   "px": 108.16,
+   "chgp": 0.8955,
+   "r1m": 1.99,
+   "rytd": -2.299,
+   "vr": 0.716,
+   "news": 4
+  },
+  "AMZN": {
+   "px": 259.92,
+   "chgp": 1.416,
+   "r1m": 1.148,
+   "rytd": 12.61,
+   "vr": 0.974,
+   "news": 2
+  },
+  "KR": {
+   "px": 59.25,
+   "chgp": 1.438,
+   "r1m": 3.584,
+   "rytd": -3.535,
+   "vr": 1.05,
+   "news": 0
+  },
+  "COST": {
+   "px": 942.25,
+   "chgp": 0.7022,
+   "r1m": 3.523,
+   "rytd": 9.749,
+   "vr": 0.743,
+   "news": 0
+  },
+  "HIMS": {
+   "px": 29.54,
+   "chgp": 0.2375,
+   "r1m": 4.863,
+   "rytd": -9.024,
+   "vr": 0.566,
+   "news": 0
+  },
+  "GDRX": {
+   "px": 3.25,
+   "chgp": -0.6116,
+   "r1m": -7.67,
+   "rytd": 19.93,
+   "vr": 0.665,
+   "news": 0
+  },
+  "OPCH": {
+   "px": 31.01,
+   "chgp": 0.03226,
+   "r1m": 30.62,
+   "rytd": -2.668,
+   "vr": 3.61,
+   "news": 4
+  },
+  "OMCL": {
+   "px": 35.21,
+   "chgp": -0.705,
+   "r1m": 3.926,
+   "rytd": -22.27,
+   "vr": 1.11,
+   "news": 1
+  },
+  "BDX": {
+   "px": 180.16,
+   "chgp": -0.07765,
+   "r1m": 1.185,
+   "rytd": 20.38,
+   "vr": 1.02,
+   "news": 0
+  },
+  "VEEV": {
+   "px": 282.5,
+   "chgp": -0.3527,
+   "r1m": 6.668,
+   "rytd": 26.55,
+   "vr": 0.744,
+   "news": 0
+  },
+  "WAY": {
+   "px": 25.77,
+   "chgp": -2.386,
+   "r1m": 6.312,
+   "rytd": -21.31,
+   "vr": 0.812,
+   "news": 1
+  },
+  "LLY": {
+   "px": 1188.72,
+   "chgp": 2.698,
+   "r1m": 5.766,
+   "rytd": 11.15,
+   "vr": 1.03,
+   "news": 4
+  },
+  "NVO": {
+   "px": 38.26,
+   "chgp": 1.945,
+   "r1m": -15.28,
+   "rytd": -21.05,
+   "vr": 0.911,
+   "news": 3
+  },
+  "PFE": {
+   "px": 28.0,
+   "chgp": 1.818,
+   "r1m": 0.7557,
+   "rytd": 18.25,
+   "vr": 0.953,
+   "news": 0
+  },
+  "MRK": {
+   "px": 142.79,
+   "chgp": 0.5988,
+   "r1m": -3.251,
+   "rytd": 38.45,
+   "vr": 0.639,
+   "news": 3
+  },
+  "ABBV": {
+   "px": 271.36,
+   "chgp": 1.751,
+   "r1m": 9.076,
+   "rytd": 21.57,
+   "vr": 1.25,
+   "news": 1
+  },
+  "JNJ": {
+   "px": 258.45,
+   "chgp": 1.44,
+   "r1m": -3.965,
+   "rytd": 26.89,
+   "vr": 0.782,
+   "news": 0
+  },
+  "TEVA": {
+   "px": 39.18,
+   "chgp": 0.1278,
+   "r1m": 6.583,
+   "rytd": 25.54,
+   "vr": 0.666,
+   "news": 0
+  },
+  "VTRS": {
+   "px": 17.49,
+   "chgp": -0.2851,
+   "r1m": 5.298,
+   "rytd": 43.79,
+   "vr": 0.822,
+   "news": 0
+  },
+  "AMRX": {
+   "px": 19.65,
+   "chgp": -3.178,
+   "r1m": 15.25,
+   "rytd": 55.95,
+   "vr": 1.2,
+   "news": 0
+  },
+  "SPY": {
+   "px": 777.22,
+   "chgp": -0.24,
+   "r1m": 1.722,
+   "rytd": 14.87,
+   "vr": 0.666,
+   "news": 0
+  },
+  "XPH": {
+   "px": 62.91,
+   "chgp": 0.0,
+   "r1m": -10.56,
+   "rytd": 12.63,
+   "vr": 1.11,
+   "news": 0
+  },
+  "IHF": {
+   "px": 55.96,
+   "chgp": 0.1073,
+   "r1m": -1.513,
+   "rytd": 17.48,
+   "vr": 0.648,
+   "news": 0
+  },
+  "IBB": {
+   "px": 203.34,
+   "chgp": 0.1182,
+   "r1m": -1.919,
+   "rytd": 20.59,
+   "vr": 0.915,
+   "news": 0
+  },
+  "CL=F": {
+   "px": 88.82,
+   "chgp": -0.6932,
+   "r1m": -4.525,
+   "rytd": 54.68,
+   "vr": 0.00442,
+   "news": 0
+  },
+  "BZ=F": {
+   "px": 100.92,
+   "chgp": 0.338,
+   "r1m": 3.064,
+   "rytd": 65.85,
+   "vr": 0.00257,
+   "news": 0
+  },
+  "HO=F": {
+   "px": 4.6578,
+   "chgp": 1.935,
+   "r1m": 1.97,
+   "rytd": 119.6,
+   "vr": 0.00225,
+   "news": 0
+  },
+  "NG=F": {
+   "px": 3.261,
+   "chgp": 4.721,
+   "r1m": 11.83,
+   "rytd": -11.53,
+   "vr": 0.033,
+   "news": 0
+  },
+  "GC=F": {
+   "px": 4134.9,
+   "chgp": -1.247,
+   "r1m": -6.851,
+   "rytd": -4.75,
+   "vr": 0.0181,
+   "news": 0
+  },
+  "SI=F": {
+   "px": 60.055,
+   "chgp": -1.82,
+   "r1m": -9.415,
+   "rytd": -14.37,
+   "vr": 1.31,
+   "news": 0
+  },
+  "HG=F": {
+   "px": 6.6445,
+   "chgp": 0.7582,
+   "r1m": -1.402,
+   "rytd": 18.02,
+   "vr": 0.127,
+   "news": 0
+  }
+ },
+ "macro": {
+  "wti": {
+   "last": 96.24,
+   "last_date": "2026-10-06",
+   "yoy": 61.07
+  },
+  "brent": {
+   "last": 125.44,
+   "last_date": "2026-10-06",
+   "yoy": 94.75
+  },
+  "diesel": {
+   "last": 6.199,
+   "last_date": "2026-10-05",
+   "yoy": 67.04
+  },
+  "gasoline": {
+   "last": 4.354,
+   "last_date": "2026-10-05",
+   "yoy": 39.37
+  },
+  "natgas": {
+   "last": 3.03,
+   "last_date": "2026-10-06",
+   "yoy": 4.483
+  },
+  "ppi_freight": {
+   "last": 213.299,
+   "last_date": "2026-08-01",
+   "yoy": 11.64
+  },
+  "ppi_pharma": {
+   "last": 929.212,
+   "last_date": "2026-08-01",
+   "yoy": 1.185
+  },
+  "ppi_rx_retail": {
+   "last": 171.716,
+   "last_date": "2026-08-01",
+   "yoy": 1.07
+  },
+  "cpi_rx": {
+   "last": 405.528,
+   "last_date": "2026-08-01",
+   "yoy": -2.686
+  },
+  "cpi_medical": {
+   "last": 592.934,
+   "last_date": "2026-08-01",
+   "yoy": 1.563
+  },
+  "cpi_all": {
+   "last": 334.131,
+   "last_date": "2026-08-01",
+   "yoy": 3.353
+  },
+  "retail_hpc": {
+   "last": 39216.0,
+   "last_date": "2026-08-01",
+   "yoy": -0.6813
+  },
+  "pharm_sales": {
+   "last": 34722.0,
+   "last_date": "2026-07-01",
+   "yoy": 0.176
+  },
+  "ust10": {
+   "last": 5.27,
+   "last_date": "2026-10-06",
+   "yoy": 30.12
+  },
+  "fedfunds": {
+   "last": 3.88,
+   "last_date": "2026-10-06",
+   "yoy": -5.366
+  },
+  "unrate": {
+   "last": 4.2,
+   "last_date": "2026-09-01",
+   "yoy": -4.545
+  },
+  "t10y2y": {
+   "last": 0.51,
+   "last_date": "2026-10-07",
+   "yoy": -3.774
+  },
+  "hy_spread": {
+   "last": 3.03,
+   "last_date": "2026-10-06",
+   "yoy": -4.717
+  },
+  "freight_tsi": {
+   "last": 135.7,
+   "last_date": "2026-07-01",
+   "yoy": -2.022
+  },
+  "indpro": {
+   "last": 103.068,
+   "last_date": "2026-08-01",
+   "yoy": 1.42
+  }
+ },
+ "fda": {
+  "shortage_drugs": 68,
+  "recalls_by_class": {
+   "Class I": 6,
+   "Class II": 51,
+   "Class III": 7,
+   "Not Yet Classified": 2
+  }
+ },
+ "top_news": [
+  {
+   "title": "Federal Reserve officials expect another rate hike will be needed this year, according to minutes",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSjhaaWIzYjFDVml5M254UFduVXgtZjgwdDR3cmM0RWVVRlR3TlFtWnZ4N3p6LW5kcC1GMUlOc0Z6U196dkcyTzJMZ0wxTTZ5SUN4dGI2elEydDdiT1ktSlNTTEhucEZfQmVwRndBV0cycFJabm1TUkk3NHpWZXR0Q2NOMA?oc=5",
+   "source": "The Standard-Speaker",
+   "score": 100,
+   "cats": [
+    "macro"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Microsoft brings more AI to PCs as it challenges Apple",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZkNrUEtoYUtLa3FYRlVtVnBCblY5Tmx2aHp5MFJwTldqSndfVUdmWDNTemFjb3l2YW5OaExPOXRyWTlTaUc1MUN2cW1tNVA4VUNJczRwMDVQZTJMTmhjT1hScHVYTklXNjJrOVpNamE3bVBGalo3RVFLbURIUkpFTGxEMEtjU01SaDVMOWM4OThPSWtmMEI0b0RtVDlvc1YwUWx5R2V3MHVIdm8?oc=5",
+   "source": "Reuters",
+   "score": 89,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "MSFT",
+    "AAPL"
+   ]
+  },
+  {
+   "title": "SpaceX seeks $40 billion financing to buy Nvidia chips, sources say",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZjBzanVwMDltRU1WZFNTWGF3VUw0ZEdQZmlmQWRsbG5lb21pU3VxTlUtM0tZbzNWaFlXY1JhbHcxV0FXX3RpTUVUQlVGenhSYnZ1VlprMzlqdEZwa1lPbEczRnJWRWZfU19nTDdtMzM2WFlMWm0zeWliejlSRUtrdXJsRmM4VFYtbmJXLVprajJ1U2cxVUZPdGhMaUgzRUVJV2R0Q3BiTGJiOHg0ZUYw?oc=5",
+   "source": "Reuters",
+   "score": 85,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "General Medicine banks $120M backed by a16z, Eli Lilly and Mercy Health to build out healthcare storefront",
+   "url": "https://www.fiercehealthcare.com/health-tech/general-medicine-banks-120m-backed-a16z-eli-lilly-and-mercy-health",
+   "source": "Fierce Healthcare",
+   "score": 78,
+   "cats": [
+    "mkts",
+    "bigtech"
+   ],
+   "tickers": [
+    "AMZN",
+    "LLY"
+   ]
+  },
+  {
+   "title": "Microsoft to sell $2,599 Surface Laptop Ultra containing Nvidia AI chip",
+   "url": "https://www.cnbc.com/2026/10/07/microsoft-starts-taking-preorders-for-2599-surface-laptop-ultra.html",
+   "source": "CNBC Top News",
+   "score": 78,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Levi Strauss hikes profit guidance after tariff refunds, but its sales outlook is less optimistic",
+   "url": "https://www.cnbc.com/2026/10/07/levi-strauss-levi-q3-2026-earnings.html",
+   "source": "CNBC Top News",
+   "score": 75,
+   "cats": [
+    "mkts",
+    "trade"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "How drugmakers are tapping into the GLP-1 frenzy's unprecedented 'consumer overlay'",
+   "url": "https://www.fiercepharma.com/pharma/how-drugmakers-are-tapping-glp-1-frenzys-unprecedented-consumer-overlay",
+   "source": "Fierce Pharma",
+   "score": 74,
+   "cats": [
+    "glp1"
+   ],
+   "tickers": [
+    "LLY",
+    "NVO"
+   ]
+  },
+  {
+   "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNb2dtMEhiM29SQkx6VUJlT0RMU05tbFQ2bGR1b2F4UlAwNXVvU0ZBSlhpRHp0TFMyNHFJRVpLb3FnQ2FvN1ZnYVlrWHVyakZJeWwtdlV3blRYcUVnX01VWVd6Y2dSSGlLRjFvdEJQQlFRMG8xRDBOSm05LWUzaVhXa0VFdFdXZFltSDhXd3RkZ0ptcENSUlJHb3NXUQ?oc=5",
+   "source": "Yahoo Finance",
+   "score": 74,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "SpaceX Reportedly Wants $40 Billion to Buy Artificial Intelligence (AI) Chips. Here's Why That's Huge News for Nvidia Investors.",
+   "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPbDRKaTJ4M0FBUXRYOUlBYUdNUVpKdjBFbldYMFpLMUNjd1U2eDFLRG16U0g0cWJCMkxuUkNqNFp4Mkd4bkV4bGJSZHplbEtVZm9jRjBIMzFNazJXM2VpYUlzWUY1OFh1QXNXa3hKY2RrV0t0amR1dU52MzcxNVdzcUVxTm92RHg1aFB4b3dKdmNIU0VJNW1PeEQ0QmZpTjVLTWkxenhoYldLOUNFZEJUVVRLNWJqSTBmNFFmRjdRMDJqN0ZScnEtWXBqcVdRMXlHdk1CT3MzTE1OMUJZMDhCYzl0UGNoTjE0ZzMzaXBYMnN2MFY4QUMwb1JOSlNlN2E0bDNuU3NqUTNFZ1RTZElhUU5VUXIxMHltT2diaHZhcGRPV1Zfc0tMOElGUmw3Vzc0RXRhcw?oc=5",
+   "source": "The Globe and Mail",
+   "score": 72,
+   "cats": [
+    "ai"
+   ],
+   "tickers": [
+    "NVDA"
+   ]
+  },
+  {
+   "title": "Microsoft and Nvidia Detail PC Laptop with RTX Spark Chip and On-Device AI",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdmVJbnpXNmxnLXlXWnZHbldkbTJ6dVhQZk1BMGdqdUxiM3B1QUF4WE5GQTVYakxYNWFLelVYYWpuRXFNZDdiVmlfcU92dGgxeEhXMEVoYmhCaEliaTBwRUFOSFJaTk9Pb01JMkpra3dLWlV1ajI4aS1ILUpUZGVJbUJ1TWFmZGtnUl9JdGtwU3ctenpIc0ZyakhCUXA3Q1ZSNUItaGFWcmFpeUhzWHJQLXh3ZDdmSEJEYUE?oc=5",
+   "source": "Barron's",
+   "score": 70,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Microsoft pushes AI vision with new, expensive Surface laptop",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcEtJS1FWVnA3R3FFb1h3czRlY3MzT3hrcWZwUmNFTWR3eTdUMVVITE1rRUVyVS10S3JiMXkxTnh0S28xZzZVMmliUk0tajl0eFN1UWNYem1vSXptVnpwZ1JXOVg2QmlrUEowTFFFM0tCdnpiM3cyUW52Znl4aEVnVW5aa2Vwb3RiaF9uMXQ2WEFySHl4U3RGbUE4eERObV82OUVKbGpwUGxHZXc?oc=5",
+   "source": "France 24",
+   "score": 70,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Fed minutes show most officials expected another rate hike before year's end",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEhTZ1dwMEVaWFlxWXUzZXNDUk5nRzE2a2hxMWN4ZEVvTnNQWURzME5ScHpkV042UU5sNkdnbUtfY0p4bDluYy1RTlRsRWNWbVRsZlRvSVpNc3ZRNmRSekN4VUEtWk9aT3lTUXJNNjgxaUpHNllsVmM5U1JBZGp6aTRrVWQwdVgyU0hkVnEwaVBGNDZZR3VzRlVkRmN3R09pOWgxNlpUTVFUdzNDNjRsNkM2aXY?oc=5",
+   "source": "KGUN 9",
+   "score": 69,
+   "cats": [
+    "macro"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Canada's Weston family to buy UK's Boots in $8.9 billion deal",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUG11N3dHZGxrZ1B6aTRhakp3TkRiZVFsUmtocWZwTkR6VVhQX1FPS19jR1c0aXRkSWZZUVhVbHoxUFJoZWlGbWdEWjlJT0pOMjVZZDJJRXlDSVUyaWR0dVdPTWp1bDJ4bzFhMTl4TmZEaGpjVXBKR0xHM0FvU29kVUFmZlNkZWRDQnZGNlFoSlIyZjhscXhmYWhSaXhPQ19hcExCNkVmYUs2bWQybm5sMlozWmk?oc=5",
+   "source": "Reuters",
+   "score": 68,
+   "cats": [
+    "general"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Caterpillar, Intel, TSMC, Micron, SpaceX, HPE, and More Stocks That Explain Today’s Market",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqR0NoYmNydHZpT1AtMDdEZzZxck1EU3lIUk9aM1FHT05ETGV5SEh5M2E0OGVadm1WXzlONG03Y3RTam5tRXBlcG9PTXhaU3pqTFJkVzJ2czA5V3NuMFB3Zm5xQjQ?oc=5",
+   "source": "Barron's",
+   "score": 68,
+   "cats": [
+    "mkts",
+    "ai"
+   ],
+   "tickers": [
+    "TSM"
+   ]
+  },
+  {
+   "title": "Healthcare Dealmakers—Minnesota health system mergers, Grindr's HIV telehealth push and more",
+   "url": "https://www.fiercehealthcare.com/finance/healthcare-dealmakers-minnesota-health-system-mergers-grindrs-hiv-telehealth-push-and-more",
+   "source": "Fierce Healthcare",
+   "score": 67,
+   "cats": [
+    "tech",
+    "deals"
+   ],
+   "tickers": [
+    "WAY"
+   ]
+  },
+  {
+   "title": "Microsoft unveils new AI laptop powered by Nvidia chips",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV0xTVTJFVzFCeDhHRXNLWGdBU2RhSWJ4RmpXdkJ1TzU1dlFGUjVOODViUkFhZFV6VUtycHkzQ1A0ZlFKYThGcndBRkMzOWwtOXJvZG0tQzlWc3JnUEpQemZLWlVEc3VxMGFacnhjTjNYNzZNbENfWXFvSXZwZlY2ZW5WeFNlcXpSR1E?oc=5",
+   "source": "Yahoo Finance",
+   "score": 67,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Notes From Fed Meeting Cite AI, Tariffs and Geopolitical Conflicts for Rate Hike",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQVlwXzU2RFhVRDlyZmZQV0NpWGkyWkhVS2E3RkdCZHk3OVcxdzNCS0lsQkxyNWY1eXJfX0ZfakNqTlVsank1VlNhQ2ktY3plLXMwZmpGRnlMVWJOWVhzNVZPXzZHYXpEVXpRbEdrZVpsRFB1MG5hbjBZVnRHQVFwSDBya2NmTXlVbXNBZ0pBdUNFUmEyVTl3V1Jzam9KR09SX2N2aGllejc0NnJrR1hDb2Z2OWR1ams?oc=5",
+   "source": "RISMedia",
+   "score": 67,
+   "cats": [
+    "macro",
+    "ai",
+    "trade"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Trump says Federal Reserve Board would like to see the country do badly",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96ZmtLV2J6VVJVbzlNQTIxYXF2ckhQZ3VoSEJpQ0lOdDZobENFRDVfX3JxS1A1NnFKaHJkUkM3aHNaNEViQkpWVkt4aGUxajdibkVRSzJGbUVLRkVMWVMxMzhyRmlKcXZDcnFDZA?oc=5",
+   "source": "The State",
+   "score": 66,
+   "cats": [
+    "macro"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "FDA dings Evolus for blurring the lines between Botox rival and lipstick",
+   "url": "https://www.fiercepharma.com/marketing/fda-dings-evolus-blurring-lines-between-botox-rival-and-lipstick",
+   "source": "Fierce Pharma",
+   "score": 63,
+   "cats": [
+    "fda"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "With FDA approval, Lilly’s BTK drug Jaypirca enters first-line CLL",
+   "url": "https://www.fiercepharma.com/pharma/fda-approval-lilly-btk-drug-jaypirca-enters-first-line-cll",
+   "source": "Fierce Pharma",
+   "score": 63,
+   "cats": [
+    "fda"
+   ],
+   "tickers": [
+    "LLY"
+   ]
+  },
+  {
+   "title": "Samsung forecasts record third-quarter profit of $80 billion on the back of AI boom",
+   "url": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
+   "source": "CNBC Top News",
+   "score": 61,
+   "cats": [
+    "mkts",
+    "ai"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Anthropic launches third Claude 5.5 model, expanding AI lineup before planned IPO",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbENadk1Lcm1iLUZOd0hYSmRZLWJHLTd0YjAwTExuMVozWW9McllnVWJuTHdPY3ZfRWJwVGdzMmpVaHhvODVVMkFMd0U0ejdyRjQxcEJMVzRqcTJqbWVaLXI5QnM1ckRSYmZVYjlBR2NqRTZaaW42QjFZMC00ZmxKOF9Fal9EODV2dEZnb1BPUDBlSFJrRDVtWkNLTWhacE04b3dyemlvckZTR3JmR0xONmxGb19hNU1tWFJMcVlJajNYUQ?oc=5",
+   "source": "Reuters",
+   "score": 61,
+   "cats": [
+    "deals",
+    "ai"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Canada’s Weston family buys Boots for $8.9bn",
+   "url": "https://www.theguardian.com/business/2026/oct/07/canada-weston-family-buys-boots-uk",
+   "source": "The Guardian Business",
+   "score": 61,
+   "cats": [
+    "general"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "CD&R, McKesson acquiring infusion therapy provider Option Care Health for $5.8B",
+   "url": "https://www.fiercehealthcare.com/finance/cdr-mckesson-acquiring-infusion-therapy-provider-option-care-health-58b",
+   "source": "Fierce Healthcare",
+   "score": 60,
+   "cats": [
+    "supply"
+   ],
+   "tickers": [
+    "MCK",
+    "OPCH"
+   ]
+  },
+  {
+   "title": "FTC sends price transparency warning letters to 24 large hospital systems",
+   "url": "https://www.fiercehealthcare.com/regulatory/ftc-sends-price-transparency-warning-letters-24-large-hospital-systems-price",
+   "source": "Fierce Healthcare",
+   "score": 60,
+   "cats": [
+    "pbm",
+    "pricing"
+   ],
+   "tickers": []
+  }
+ ],
+ "brief": [
+  "US stocks: S&P 500 -0.22%, Nasdaq 100 -0.21%, Dow -0.66%.",
+  "10-year Treasury yield 5.28% (+1 bp); VIX 15.1; gold -1.2%; bitcoin -2.6%.",
+  "Health care outpaced the market: the sector moved +1.03% against -0.22% for the S&P 500.",
+  "Manufacturers and GLP-1 led the watchlist at +1.71%; Generics and biosimilars lagged at -1.11%.",
+  "Biggest single move: Amneal at -3.2%.",
+  "WTI crude is $88.82, -0.7% on the day and +61% from a year ago.",
+  "Prescription drug and medical goods prices are running -2.7% year over year, while pharmacy dispensing margins sit at +1.1%.",
+  "FDA reports 68 drugs in active shortage and 6 Class I recalls in the last 30 days."
+ ]
+}
