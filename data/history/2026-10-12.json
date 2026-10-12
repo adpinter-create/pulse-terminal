@@ -1,0 +1,1173 @@
+{
+ "generated_at": "2026-10-12T21:15:10Z",
+ "tickers": {
+  "^GSPC": {
+   "px": 7807.24,
+   "chgp": -0.05504,
+   "r1m": 1.962,
+   "rytd": 14.05,
+   "vr": 0.43,
+   "news": 0
+  },
+  "^NDX": {
+   "px": 30664.7,
+   "chgp": -0.7074,
+   "r1m": 4.414,
+   "rytd": 21.45,
+   "vr": 0.107,
+   "news": 0
+  },
+  "^DJI": {
+   "px": 51850.6,
+   "chgp": 0.3787,
+   "r1m": -1.375,
+   "rytd": 7.88,
+   "vr": 0.688,
+   "news": 0
+  },
+  "^RUT": {
+   "px": 2794.48,
+   "chgp": -0.4453,
+   "r1m": -3.769,
+   "rytd": 12.59,
+   "vr": null,
+   "news": 0
+  },
+  "^VIX": {
+   "px": 15.21,
+   "chgp": 2.493,
+   "r1m": -3.977,
+   "rytd": 1.739,
+   "vr": null,
+   "news": 0
+  },
+  "^STOXX50E": {
+   "px": 6201.21,
+   "chgp": 0.451,
+   "r1m": -1.959,
+   "rytd": 6.987,
+   "vr": null,
+   "news": 0
+  },
+  "^FTSE": {
+   "px": 10656.3,
+   "chgp": 0.9873,
+   "r1m": 0.05521,
+   "rytd": 7.299,
+   "vr": null,
+   "news": 0
+  },
+  "^N225": {
+   "px": 69030.9,
+   "chgp": -0.0162,
+   "r1m": 3.962,
+   "rytd": 37.13,
+   "vr": 1.01,
+   "news": 0
+  },
+  "^HSI": {
+   "px": 24211.3,
+   "chgp": 1.789,
+   "r1m": -4.208,
+   "rytd": -5.537,
+   "vr": 1.27,
+   "news": 0
+  },
+  "^IRX": {
+   "px": 4.05,
+   "chgp": -0.1725,
+   "r1m": 3.501,
+   "rytd": 14.18,
+   "vr": null,
+   "news": 0
+  },
+  "^FVX": {
+   "px": 5.019,
+   "chgp": -0.03983,
+   "r1m": 4.759,
+   "rytd": 34.85,
+   "vr": null,
+   "news": 0
+  },
+  "^TNX": {
+   "px": 5.24,
+   "chgp": -0.07628,
+   "r1m": 5.327,
+   "rytd": 25.87,
+   "vr": null,
+   "news": 0
+  },
+  "^TYX": {
+   "px": 5.598,
+   "chgp": -0.03571,
+   "r1m": 4.557,
+   "rytd": 15.66,
+   "vr": null,
+   "news": 0
+  },
+  "DX-Y.NYB": {
+   "px": 102.576,
+   "chgp": 0.3581,
+   "r1m": 3.487,
+   "rytd": 4.371,
+   "vr": null,
+   "news": 0
+  },
+  "EURUSD=X": {
+   "px": 1.1157,
+   "chgp": -0.4994,
+   "r1m": -3.902,
+   "rytd": -5.023,
+   "vr": null,
+   "news": 0
+  },
+  "USDJPY=X": {
+   "px": 158.63,
+   "chgp": 0.3587,
+   "r1m": 2.685,
+   "rytd": 1.417,
+   "vr": null,
+   "news": 0
+  },
+  "GBPUSD=X": {
+   "px": 1.321,
+   "chgp": -0.1436,
+   "r1m": -2.213,
+   "rytd": -1.908,
+   "vr": null,
+   "news": 0
+  },
+  "USDCNY=X": {
+   "px": 6.692,
+   "chgp": -0.1507,
+   "r1m": -0.2103,
+   "rytd": -4.347,
+   "vr": null,
+   "news": 0
+  },
+  "BTC-USD": {
+   "px": 82790.9,
+   "chgp": -1.062,
+   "r1m": -4.402,
+   "rytd": -5.391,
+   "vr": 0.781,
+   "news": 0
+  },
+  "ETH-USD": {
+   "px": 2508.24,
+   "chgp": -1.044,
+   "r1m": -9.661,
+   "rytd": -15.46,
+   "vr": 0.959,
+   "news": 0
+  },
+  "XLK": {
+   "px": 196.36,
+   "chgp": -1.217,
+   "r1m": 4.753,
+   "rytd": 36.88,
+   "vr": 0.687,
+   "news": 0
+  },
+  "XLF": {
+   "px": 55.05,
+   "chgp": 0.5847,
+   "r1m": -3.502,
+   "rytd": 1.741,
+   "vr": 0.502,
+   "news": 0
+  },
+  "XLV": {
+   "px": 171.99,
+   "chgp": 0.6908,
+   "r1m": 4.407,
+   "rytd": 12.48,
+   "vr": 0.709,
+   "news": 0
+  },
+  "XLY": {
+   "px": 112.27,
+   "chgp": -0.514,
+   "r1m": -0.392,
+   "rytd": -5.395,
+   "vr": 0.577,
+   "news": 0
+  },
+  "XLC": {
+   "px": 111.45,
+   "chgp": 0.9694,
+   "r1m": -0.6951,
+   "rytd": -4.463,
+   "vr": 1.15,
+   "news": 0
+  },
+  "XLI": {
+   "px": 169.15,
+   "chgp": -0.05908,
+   "r1m": -1.604,
+   "rytd": 9.915,
+   "vr": 0.486,
+   "news": 0
+  },
+  "XLP": {
+   "px": 84.41,
+   "chgp": 1.175,
+   "r1m": 1.901,
+   "rytd": 10.76,
+   "vr": 0.67,
+   "news": 0
+  },
+  "XLE": {
+   "px": 66.01,
+   "chgp": 1.429,
+   "r1m": 1.938,
+   "rytd": 50.57,
+   "vr": 0.56,
+   "news": 0
+  },
+  "XLU": {
+   "px": 41.63,
+   "chgp": 0.5313,
+   "r1m": -1.071,
+   "rytd": -0.4474,
+   "vr": 0.485,
+   "news": 0
+  },
+  "XLB": {
+   "px": 49.44,
+   "chgp": 0.02023,
+   "r1m": -2.517,
+   "rytd": 10.42,
+   "vr": 0.492,
+   "news": 0
+  },
+  "XLRE": {
+   "px": 41.92,
+   "chgp": 0.745,
+   "r1m": -2.642,
+   "rytd": 6.394,
+   "vr": 1.23,
+   "news": 0
+  },
+  "NVDA": {
+   "px": 226.32,
+   "chgp": -1.291,
+   "r1m": 3.679,
+   "rytd": 21.64,
+   "vr": 0.642,
+   "news": 52
+  },
+  "MSFT": {
+   "px": 541.15,
+   "chgp": 1.136,
+   "r1m": 9.184,
+   "rytd": 12.61,
+   "vr": 0.814,
+   "news": 38
+  },
+  "AAPL": {
+   "px": 340.97,
+   "chgp": 1.286,
+   "r1m": 2.618,
+   "rytd": 25.76,
+   "vr": 0.683,
+   "news": 4
+  },
+  "GOOGL": {
+   "px": 352.72,
+   "chgp": 0.3014,
+   "r1m": 4.201,
+   "rytd": 12.91,
+   "vr": 0.689,
+   "news": 5
+  },
+  "META": {
+   "px": 742.96,
+   "chgp": 3.38,
+   "r1m": 14.74,
+   "rytd": 12.84,
+   "vr": 1.14,
+   "news": 17
+  },
+  "AVGO": {
+   "px": 354.73,
+   "chgp": -1.884,
+   "r1m": -1.827,
+   "rytd": 3.058,
+   "vr": 0.653,
+   "news": 7
+  },
+  "TSM": {
+   "px": 444.35,
+   "chgp": -1.977,
+   "r1m": 2.84,
+   "rytd": 47.37,
+   "vr": 0.879,
+   "news": 3
+  },
+  "AMD": {
+   "px": 594.24,
+   "chgp": -2.279,
+   "r1m": 15.13,
+   "rytd": 177.5,
+   "vr": 0.689,
+   "news": 1
+  },
+  "TSLA": {
+   "px": 378.03,
+   "chgp": -1.22,
+   "r1m": 3.445,
+   "rytd": -15.94,
+   "vr": 0.562,
+   "news": 0
+  },
+  "ORCL": {
+   "px": 137.39,
+   "chgp": -2.836,
+   "r1m": -8.239,
+   "rytd": -28.57,
+   "vr": 0.691,
+   "news": 1
+  },
+  "UPS": {
+   "px": 95.34,
+   "chgp": 0.8142,
+   "r1m": -4.926,
+   "rytd": 0.6819,
+   "vr": 0.675,
+   "news": 0
+  },
+  "FDX": {
+   "px": 292.23,
+   "chgp": 0.1783,
+   "r1m": -5.966,
+   "rytd": 27.03,
+   "vr": 0.483,
+   "news": 0
+  },
+  "UNP": {
+   "px": 281.57,
+   "chgp": 1.16,
+   "r1m": -0.9951,
+   "rytd": 23.57,
+   "vr": 0.689,
+   "news": 0
+  },
+  "CHRW": {
+   "px": 139.75,
+   "chgp": -1.799,
+   "r1m": -8.529,
+   "rytd": -12.1,
+   "vr": 0.621,
+   "news": 0
+  },
+  "EXPD": {
+   "px": 193.41,
+   "chgp": 0.08797,
+   "r1m": 0.4206,
+   "rytd": 30.47,
+   "vr": 0.626,
+   "news": 0
+  },
+  "JBHT": {
+   "px": 228.31,
+   "chgp": -0.4144,
+   "r1m": -15.58,
+   "rytd": 18.13,
+   "vr": 0.629,
+   "news": 0
+  },
+  "ODFL": {
+   "px": 181.91,
+   "chgp": -0.03297,
+   "r1m": 1.179,
+   "rytd": 16.5,
+   "vr": 0.655,
+   "news": 0
+  },
+  "XPO": {
+   "px": 180.52,
+   "chgp": -1.608,
+   "r1m": -0.9112,
+   "rytd": 32.82,
+   "vr": 0.713,
+   "news": 0
+  },
+  "MATX": {
+   "px": 227.68,
+   "chgp": 0.8907,
+   "r1m": -1.086,
+   "rytd": 85.4,
+   "vr": 0.558,
+   "news": 0
+  },
+  "ZIM": {
+   "px": 30.9,
+   "chgp": 3.034,
+   "r1m": 4.498,
+   "rytd": 50.46,
+   "vr": 1.15,
+   "news": 1
+  },
+  "CVS": {
+   "px": 87.74,
+   "chgp": 1.834,
+   "r1m": -7.31,
+   "rytd": 13.14,
+   "vr": 1.18,
+   "news": 3
+  },
+  "CI": {
+   "px": 283.34,
+   "chgp": 0.3222,
+   "r1m": 0.9189,
+   "rytd": 4.692,
+   "vr": 0.587,
+   "news": 0
+  },
+  "UNH": {
+   "px": 378.52,
+   "chgp": -0.2056,
+   "r1m": 0.4645,
+   "rytd": 16.93,
+   "vr": 1.16,
+   "news": 2
+  },
+  "ELV": {
+   "px": 422.09,
+   "chgp": 2.275,
+   "r1m": 0.8048,
+   "rytd": 22.17,
+   "vr": 0.725,
+   "news": 0
+  },
+  "HUM": {
+   "px": 433.5,
+   "chgp": 0.3774,
+   "r1m": 5.783,
+   "rytd": 70.51,
+   "vr": 1.14,
+   "news": 2
+  },
+  "MCK": {
+   "px": 955.76,
+   "chgp": 1.802,
+   "r1m": 8.423,
+   "rytd": 16.86,
+   "vr": 0.778,
+   "news": 1
+  },
+  "COR": {
+   "px": 325.06,
+   "chgp": 0.3736,
+   "r1m": 1.085,
+   "rytd": -3.183,
+   "vr": 0.773,
+   "news": 0
+  },
+  "CAH": {
+   "px": 238.08,
+   "chgp": 0.2147,
+   "r1m": 1.732,
+   "rytd": 16.95,
+   "vr": 0.648,
+   "news": 0
+  },
+  "WMT": {
+   "px": 113.08,
+   "chgp": 1.554,
+   "r1m": 5.534,
+   "rytd": 2.145,
+   "vr": 0.613,
+   "news": 2
+  },
+  "AMZN": {
+   "px": 259.53,
+   "chgp": -1.105,
+   "r1m": 1.071,
+   "rytd": 12.44,
+   "vr": 0.683,
+   "news": 0
+  },
+  "KR": {
+   "px": 62.56,
+   "chgp": 1.493,
+   "r1m": 6.958,
+   "rytd": 1.854,
+   "vr": 0.572,
+   "news": 0
+  },
+  "COST": {
+   "px": 959.44,
+   "chgp": 1.322,
+   "r1m": 6.042,
+   "rytd": 11.75,
+   "vr": 0.619,
+   "news": 1
+  },
+  "HIMS": {
+   "px": 30.64,
+   "chgp": -0.9056,
+   "r1m": 11.38,
+   "rytd": -5.636,
+   "vr": 0.866,
+   "news": 0
+  },
+  "GDRX": {
+   "px": 3.48,
+   "chgp": 1.458,
+   "r1m": 2.655,
+   "rytd": 28.41,
+   "vr": 1.02,
+   "news": 0
+  },
+  "OPCH": {
+   "px": 31.1,
+   "chgp": 0.09656,
+   "r1m": 32.45,
+   "rytd": -2.385,
+   "vr": 0.686,
+   "news": 0
+  },
+  "OMCL": {
+   "px": 36.87,
+   "chgp": 2.931,
+   "r1m": 12.44,
+   "rytd": -18.61,
+   "vr": 0.902,
+   "news": 0
+  },
+  "BDX": {
+   "px": 188.89,
+   "chgp": 2.797,
+   "r1m": 6.207,
+   "rytd": 26.21,
+   "vr": 0.629,
+   "news": 0
+  },
+  "VEEV": {
+   "px": 295.85,
+   "chgp": -0.09455,
+   "r1m": 12.75,
+   "rytd": 32.53,
+   "vr": 0.73,
+   "news": 1
+  },
+  "WAY": {
+   "px": 26.65,
+   "chgp": -0.1124,
+   "r1m": 13.55,
+   "rytd": -18.63,
+   "vr": 0.707,
+   "news": 0
+  },
+  "LLY": {
+   "px": 1182.62,
+   "chgp": 0.2841,
+   "r1m": 5.998,
+   "rytd": 10.58,
+   "vr": 0.547,
+   "news": 2
+  },
+  "NVO": {
+   "px": 38.58,
+   "chgp": -0.1553,
+   "r1m": -10.42,
+   "rytd": -20.39,
+   "vr": 0.542,
+   "news": 3
+  },
+  "PFE": {
+   "px": 28.4,
+   "chgp": 0.4243,
+   "r1m": 2.453,
+   "rytd": 19.94,
+   "vr": 0.539,
+   "news": 0
+  },
+  "MRK": {
+   "px": 145.45,
+   "chgp": -0.103,
+   "r1m": 1.653,
+   "rytd": 41.03,
+   "vr": 0.67,
+   "news": 2
+  },
+  "ABBV": {
+   "px": 281.12,
+   "chgp": 1.682,
+   "r1m": 9.334,
+   "rytd": 25.94,
+   "vr": 1.21,
+   "news": 1
+  },
+  "JNJ": {
+   "px": 263.73,
+   "chgp": 0.8759,
+   "r1m": -0.6966,
+   "rytd": 29.49,
+   "vr": 0.826,
+   "news": 1
+  },
+  "TEVA": {
+   "px": 41.17,
+   "chgp": 0.1703,
+   "r1m": 11.0,
+   "rytd": 31.91,
+   "vr": 1.23,
+   "news": 0
+  },
+  "VTRS": {
+   "px": 17.54,
+   "chgp": -0.5669,
+   "r1m": 6.239,
+   "rytd": 44.2,
+   "vr": 0.811,
+   "news": 0
+  },
+  "AMRX": {
+   "px": 20.03,
+   "chgp": 0.6027,
+   "r1m": 17.75,
+   "rytd": 58.97,
+   "vr": 0.914,
+   "news": 0
+  },
+  "SPY": {
+   "px": 778.1,
+   "chgp": -0.06037,
+   "r1m": 2.06,
+   "rytd": 15.0,
+   "vr": 0.411,
+   "news": 0
+  },
+  "XPH": {
+   "px": 64.01,
+   "chgp": -0.9899,
+   "r1m": -5.125,
+   "rytd": 14.6,
+   "vr": 1.06,
+   "news": 0
+  },
+  "IHF": {
+   "px": 57.17,
+   "chgp": 0.7223,
+   "r1m": 1.185,
+   "rytd": 20.02,
+   "vr": 0.838,
+   "news": 0
+  },
+  "IBB": {
+   "px": 204.26,
+   "chgp": -1.08,
+   "r1m": 0.6608,
+   "rytd": 21.14,
+   "vr": 0.665,
+   "news": 0
+  },
+  "CL=F": {
+   "px": 93.16,
+   "chgp": 1.426,
+   "r1m": -6.887,
+   "rytd": 62.24,
+   "vr": 0.657,
+   "news": 0
+  },
+  "BZ=F": {
+   "px": 105.92,
+   "chgp": 1.146,
+   "r1m": 1.252,
+   "rytd": 74.07,
+   "vr": 0.739,
+   "news": 0
+  },
+  "HO=F": {
+   "px": 4.6926,
+   "chgp": -0.9666,
+   "r1m": -5.378,
+   "rytd": 121.3,
+   "vr": 0.814,
+   "news": 0
+  },
+  "NG=F": {
+   "px": 3.177,
+   "chgp": -1.335,
+   "r1m": 12.22,
+   "rytd": -13.81,
+   "vr": 1.06,
+   "news": 0
+  },
+  "GC=F": {
+   "px": 4195.9,
+   "chgp": -0.4838,
+   "r1m": -4.831,
+   "rytd": -3.345,
+   "vr": 0.633,
+   "news": 0
+  },
+  "SI=F": {
+   "px": 60.57,
+   "chgp": -0.1648,
+   "r1m": -6.172,
+   "rytd": -13.64,
+   "vr": 93.6,
+   "news": 0
+  },
+  "HG=F": {
+   "px": 6.7645,
+   "chgp": 1.837,
+   "r1m": 4.56,
+   "rytd": 20.15,
+   "vr": 18.4,
+   "news": 0
+  }
+ },
+ "macro": {
+  "wti": {
+   "last": 96.24,
+   "last_date": "2026-10-06",
+   "yoy": 61.07
+  },
+  "brent": {
+   "last": 125.44,
+   "last_date": "2026-10-06",
+   "yoy": 94.75
+  },
+  "diesel": {
+   "last": 6.199,
+   "last_date": "2026-10-05",
+   "yoy": 67.04
+  },
+  "gasoline": {
+   "last": 4.354,
+   "last_date": "2026-10-05",
+   "yoy": 39.37
+  },
+  "natgas": {
+   "last": 3.03,
+   "last_date": "2026-10-06",
+   "yoy": 4.483
+  },
+  "ppi_freight": {
+   "last": 213.299,
+   "last_date": "2026-08-01",
+   "yoy": 11.64
+  },
+  "ppi_pharma": {
+   "last": 929.212,
+   "last_date": "2026-08-01",
+   "yoy": 1.185
+  },
+  "ppi_rx_retail": {
+   "last": 171.716,
+   "last_date": "2026-08-01",
+   "yoy": 1.07
+  },
+  "cpi_rx": {
+   "last": 405.528,
+   "last_date": "2026-08-01",
+   "yoy": -2.686
+  },
+  "cpi_medical": {
+   "last": 592.934,
+   "last_date": "2026-08-01",
+   "yoy": 1.563
+  },
+  "cpi_all": {
+   "last": 334.131,
+   "last_date": "2026-08-01",
+   "yoy": 3.353
+  },
+  "retail_hpc": {
+   "last": 39216.0,
+   "last_date": "2026-08-01",
+   "yoy": -0.6813
+  },
+  "pharm_sales": {
+   "last": 34722.0,
+   "last_date": "2026-07-01",
+   "yoy": 0.176
+  },
+  "ust10": {
+   "last": 5.22,
+   "last_date": "2026-10-08",
+   "yoy": 28.89
+  },
+  "fedfunds": {
+   "last": 3.88,
+   "last_date": "2026-10-08",
+   "yoy": -5.366
+  },
+  "unrate": {
+   "last": 4.2,
+   "last_date": "2026-09-01",
+   "yoy": -4.545
+  },
+  "t10y2y": {
+   "last": 0.44,
+   "last_date": "2026-10-09",
+   "yoy": -20.0
+  },
+  "hy_spread": {
+   "last": 3.15,
+   "last_date": "2026-10-08",
+   "yoy": -0.9434
+  },
+  "freight_tsi": {
+   "last": 135.7,
+   "last_date": "2026-07-01",
+   "yoy": -2.022
+  },
+  "indpro": {
+   "last": 103.068,
+   "last_date": "2026-08-01",
+   "yoy": 1.42
+  }
+ },
+ "fda": {
+  "shortage_drugs": 68,
+  "recalls_by_class": {
+   "Class I": 4,
+   "Class II": 23,
+   "Class III": 3,
+   "Not Yet Classified": 2
+  }
+ },
+ "top_news": [
+  {
+   "title": "Microsoft bets on home-grown AI chip to challenge Nvidia",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOek5ySmJvVHpYNDQ3eEp4ekYxTEUzYW9SeDlwRXF0NDFBS3FrdEFmNjVvQVNIejVZSlFRRXVuRHlpdDk0SS0zZ2xUX2NveTVxR3VPUGlnbVYxbjBYT09TdS13b1I4ZENkUkFqZHI4VE40TXFwZlpyNVV3SE9xOU95TkRybE9hV213VW5iVGNlQjhlc3kzeHZUSA?oc=5",
+   "source": "The Straits Times",
+   "score": 100,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Microsoft reveals Maia 300 AI chip as it works to reduce dependence on Nvidia, AMD",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdzlOWjZPREptdmhCandwSVY1VlRpbGZfbTFKalh1a29UT192S0FiVnpQSHZKb1ZiRjRWQnVMLW5LdTVxUjBWbWM5VXl4czJnLWM4aFpnWU1NYk80VW5KYjJxQUt5THB5QkpVZkFXU2hNQ28wdlIwWmhyRENSTWY0d2phRklOb05XdFVaQS1YRFNyZHE3blRsYk12X2hZS0MySlBSb0ZUUGJPYS1rNUR1N0NCczZneFcyVUk1cTVSaXZURWVwTXV6SGJ6RG5TNzFOd1p2TDhodGM?oc=5",
+   "source": "Yahoo Finance",
+   "score": 98,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT",
+    "AMD"
+   ]
+  },
+  {
+   "title": "Dow Jones Futures: Micron, Nvidia Lead AI Trade Lower; Apple, Meta Rally Near Buy Points",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSlk0RnVxb1Y1NnB2cDJ0R0FtVlBhZ1dUV3JsenBRSUNxNW5xNGJySFd3M2MzekJBaXlhRzlObnNmaUZ4UlZSOVdqazFnc2VVVDJmYWJ4Rm1ROTJUNXMybXRfRm5VZ0JIWEZVNEpDZXVZM2VqWkFQR0Q5aV9IbGwwSnA5QjZvdXFId1pDa18xektnbThpN2pRbFRtWW52dHg3aGcw?oc=5",
+   "source": "Investor's Business Daily",
+   "score": 83,
+   "cats": [
+    "mkts",
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "AAPL",
+    "META"
+   ]
+  },
+  {
+   "title": "Meta launches Muse Wonder AI model to rival ChatGPT and Claude",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WenFrTmVyQVQ0dWVoRXJFblU1eWEwaTUzckQ5RndaUjhFLVZ6eDFjX3hhLVY2bEZLYWlJdW9raGZPSjdFUG9MN1R0ZmJXdENUc2MyOGZBREZXT1Ftd29URWloSks?oc=5",
+   "source": "Quartz",
+   "score": 78,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Is the Stock Market Open Today? Here Are the Trading Hours for Columbus Day.",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZzhQcF9yTmp0c0w4NTBTd0FRS2JMeVdjOWwwSnRuMHZzRGl6SV8ycHZLMkhWLVYzQjdTTXBCLW5VS2FoU0NBamRaRVRjNFpPcy1sSm9UTUU3WEI1UXJ4cFk4N1JXa3MwSDRkOF9KbWQ1WHJMVFN5bkxpVXdyZ1Y5VWQ4aDlXV2kwVllOWHJYQzlGeWVNNlpqSTR6THVPRGE5aGdHa3lDOUFfUzRx?oc=5",
+   "source": "Barron's",
+   "score": 78,
+   "cats": [
+    "mkts"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Microsoft plans huge deployment of its own AI chips, with an eye on saving costs",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWHVSM1ltUmRIUHVldm04ZU5JX2hLc0lhYjZVaDMzMDlkVkxXNUM3OTFFVU1kdlM1R3BneGN5cXp3Ui1Yc211TFF0VUU3ZlpRWjhBRy0yOGJjdlZxR3FmdmFHdFNMRDM3Rnh3WjJMd0d1MHNINEdvdWpBVEc5TTJNMjk1Xy1JNEY2b1g5RkYzWXYtakQ0SmNnMHdoUlRnbjFMSWVBUm9QaVBXbkFNUVgwSDVLdURleTBwMHc?oc=5",
+   "source": "Reuters",
+   "score": 76,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Meta says its new AI models on par with OpenAI, Anthropic",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ2VWeDZOOXdlUnZ3NGwtb3ZmYmI5MVFSd094Uy1QS3BDZWJCWW5rMld2S3RvakcxVHJDemg3T1ZORFl3VEF5WHVidnZRMzAwY2Y2bXVsU2ZVNmFKUTNka2xFY1AycXZPNnNnUVBmaDBKMGxwd3lIYU9RZkZLSVFBdEV3OThDN09KQ0FNVnJjMm9YaTM4WTZ3VDJUX1V5cTI4UlFoV3AwR00?oc=5",
+   "source": "The Straits Times",
+   "score": 70,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Microsoft unveils Maia 300 AI chip to reduce reliance on Nvidia GPUs",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQazlUUklSM194X0ZVSXJGS0FxMFFKRlZydGkwQ1BFck1wZUdoXzBQUUpaV0piUWpkZURxdm8xc1NmVU5yZ1ZFR21falZac0pNMmZVRk5IMVBRWF9vNk1YbmQ1cFFadG1FaG56YV85UGs5LVJMNXpuZV9MUHdTbWQ1OEtWSHdoWDM3WmRybkRvV1hTRVBldlE0MzU2M0tYSnFzbkJLS1dPZUtzX2VqcUZLNW5Ta9IBuAFBVV95cUxQMHRLTGVMVUZkNjdFOW4zNGh3b290UW5sNWU2S3JJS193U0MtRDU2T2d6RVJkWXA5TDQwc2tHcy1jXzNxaXpGSGNrVHVndTJKOVJUMEtHU1BPYVVCQ3NBMGRMSlQwdzBqOWVEZE9odmVKMk81YmpicGFsTHBMbTdoc2lsSTJfbGFFTjdlZ1dqSGVDVU1kUTlhZlBxR2E2NldLSWxzTzg1UkVQUU9uN0g2MjJBZU5Qdzcz?oc=5",
+   "source": "Firstpost",
+   "score": 69,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbXdvdGREcjRPNHptRzBRc0U2a3ZSZXQ5cHdDRG5HVkpyYnZCTmJKcVdJVnpGUnhua09PbmR4bXdXM0diYVptTWNmcHFaY3FTRmlJV2N6d2Vma183QnA3UnFjUTVNRjhEWWRFZDJNQTdGNkkzbFNNSzFvLTloQ25kQmlYRXFfcmRCSzVvdU9VdXhSUEx5d1ZqU3VB0gGfAUFVX3lxTFBYNlVqUHRKWk9zYWtJU1hCWEpKM2tRUDgxdDltRlV1aU52dmlieFIyWTNwOEt2VndRT01ERnVmVG1xaEt6YnptRDhJNW42bFgwQWM4QXJMTTE5SllPZFc5dUtoclhJamluZENjdXdzeGdDNDFzejZlSHRwbjBVX0VTbHh0ZDRPVlNfQVgyelJVUl9KZi1LQllkR29uRlg4NA?oc=5",
+   "source": "CNBC",
+   "score": 66,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "Meta is back on the AI leaderboard with its new family of Wonder models",
+   "url": "https://www.marketwatch.com/story/meta-is-back-on-the-ai-leaderboard-with-its-new-family-of-wonder-models-a704b6cc?mod=mw_rss_topstories",
+   "source": "MarketWatch",
+   "score": 62,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Meta debuts Muse Wonder AI model in latest test of users' willingness to pay",
+   "url": "https://www.cnbc.com/2026/10/12/meta-muse-wonder-ai-model-agent.html",
+   "source": "CNBC Top News",
+   "score": 62,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Meta launches paid AI assistant model Muse Wonder as it seeks revenue beyond ads",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNDdNOEZwOHBzOWJPbjBiSElFZWtueVNtaXozb1NXZlJ0RmJTc0REOFFHRms0eU05cEVGczlFbDVQZ0pBOVlhbzdaRzlURHFlVzU3U2JtTWZkQk9XdFpqNEpnS3B4VlJLVm1SNHR4bkd3ZlJDNmF5aFgzNGM3b2tqWUNCWFRqVi1jdllDUDRyck9mUXBrcDc0UFF6LW9CV1JvZ3kzWEllUDZHYWc2WHc?oc=5",
+   "source": "news.lavx.hu",
+   "score": 61,
+   "cats": [
+    "mkts",
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Microsoft Unveils New Maia AI Chips on a Rough Day for Nvidia Stock",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQa0xiX25MdWZKcWVyVVUyN013VnRRQkhXRzlqeUtaeHVmc2ExMjVKb1k4bmRWTzFRY0pUQXItRE1TcWs1RUxpSVVvU2Zmb0s2TkRsMVN1cnFYeTlydmlSVUZxOXUweXBobGZrcGU5WUs5ODU1eVBORW95UmpncmZBVg?oc=5",
+   "source": "Barron's",
+   "score": 60,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "NVDA",
+    "MSFT"
+   ]
+  },
+  {
+   "title": "EU-China trade talks grapple with tariffs, rare earths, and export controls",
+   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPbWZHbGR3STVfS2JWUFE0Zk81Tkl6aUVVNjBCVFhWY2hIVlZJS0ctdlRraENLbGVxVlowdnJ6cWpPc19TVko3U1dXblFmNkJEUFpyaU5jb1dQdFlBT0RmWmdLLTdlZ3RDcmVMMzdjbjZYMDRLZkhOckVuazZrWFp0RWVfQ1RrLUk2X1lZeHZISWRvLWpZRkR4Y2IwcklkT0xGV000X240cnpKT1otaTdPZnUyMS1raEJkT1FQTHpGOXlMd3ItTTgzVE1ORXpPaVhRS0Nxc2ZhTHRGS3U0VTF3eEQyRURWOUl1LVpvekk3R0NaR2ozSzZnM2JCa2t1dms4WDVTa2ppYkNKUQ?oc=5",
+   "source": "The Brussels Times",
+   "score": 59,
+   "cats": [
+    "trade"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Meta unveils Muse Wonder models in fresh push into frontier AI",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX184WXNOcjBFVG5BeEg5amMycFBfNTAzTVJsbEtUQ3k4SVJpS0tCQWpoNTRHRlY4UmVuQy1jMlhmZ2FEZWdEU3ZIQ1J0VHhoWTJZbmVfbUd4aUw0aktZeXFiNkpuaWJtRGwwcGx1YUZyamx6WnJJZjZ4TEJJZW5KNFRFVjY0WUpNa1RYTnR3WmlqdThNNFplUnJ5WQ?oc=5",
+   "source": "Geo News",
+   "score": 59,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Google unveils new Fitbit Edge tracker as tech giant expands health monitoring ambitions",
+   "url": "https://www.fiercehealthcare.com/health-tech/google-unveils-new-fitbit-edge-tracker-tech-giant-expands-health-monitoring-ambitions",
+   "source": "Fierce Healthcare",
+   "score": 58,
+   "cats": [
+    "mkts",
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "GOOGL"
+   ]
+  },
+  {
+   "title": "Oracle Health data breach in 2025 compromised data of 20M people: report",
+   "url": "https://www.fiercehealthcare.com/health-tech/oracle-health-data-breach-2025-compromised-data-20m-people-report",
+   "source": "Fierce Healthcare",
+   "score": 58,
+   "cats": [
+    "cyber"
+   ],
+   "tickers": [
+    "ORCL"
+   ]
+  },
+  {
+   "title": "Meta Launches Two New AI Models, Muse Wonder and Muse Wonder Full, for Coding and Agent Tasks",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBNRkpSSUxJTjctRTQ1dm9ObHVqN0E3WWx0YXBtaC1sOUExT3ItX3p0SVAxRU9GcFZFVkcwRDRYY0c5c0dZaUZXVTZvZnBudGxZMXBHZA?oc=5",
+   "source": "bloomingbit",
+   "score": 58,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Alignment Healthcare sues CMS over its 2027 Medicare Advantage star ratings",
+   "url": "https://www.fiercehealthcare.com/payers/alignment-healthcare-sues-cms-over-its-2027-medicare-advantage-star-ratings",
+   "source": "Fierce Healthcare",
+   "score": 57,
+   "cats": [
+    "pricing",
+    "ops"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Humana rebounds, Aetna slips: Winners and losers in the 2027 MA star ratings",
+   "url": "https://www.fiercehealthcare.com/payers/humana-rebounds-aetna-slips-winners-and-losers-2027-ma-star-ratings",
+   "source": "Fierce Healthcare",
+   "score": 57,
+   "cats": [
+    "ops"
+   ],
+   "tickers": [
+    "CVS",
+    "HUM"
+   ]
+  },
+  {
+   "title": "Hospital industry sues to block HHS' 340B rebate pilot (again)",
+   "url": "https://www.fiercehealthcare.com/providers/hospital-industry-files-lawsuit-block-hhs-340b-rebate-pilot-again",
+   "source": "Fierce Healthcare",
+   "score": 57,
+   "cats": [
+    "pbm",
+    "pricing"
+   ],
+   "tickers": []
+  },
+  {
+   "title": "Meta Launches AI Model Muse Wonder with Subscription Plans for Enhanced Digital Assistant Capabilities",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSklzMEpuN2NEZmhwOGdCT2FFclpoWEtUckk3QngyX2NkR21PVmo5NHhJTTd5NUNFMjNwcm1GaXpIUXowQjBfQXV6cnhHUmtWUXVUYnozVmtZaGZNUGVxY1ladDl1bnZROEt1U2d4OE1aN3BTcDZxQ1J6UjlDSWZWU3hGODkyMW4wZmxTLThCQ0Y4ZTFEMjRmRDhVTlJwd0ZpMUxOY3Z5bVVMOWdtb1RHZzA4dl92cXk0UEhRZmRQdjR6UW1DMU1ldg?oc=5",
+   "source": "SSBCrack",
+   "score": 57,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Meta releases Muse Wonder and Muse Wonder Full AI models — Channel NewsAsia",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOa0xydWtSOG9BX1FUMlA2dnNKVW14WHhINlpPVmREakVxMjFRMkE5d2lEZTFjWldTazNJODJCS1ZHNzh6QVBRT05YdW5OczlEanBNc1kwOXZ3VnY1ckNIbzIxYktIOENrZkUyUjRDSVpsVUhUNmZwZ09nSGVJSWVxVVl0dF8xd1ZpamhlVGF5U1ZSSEFfRjlQNWVTME5RTWdXdmxSc3d1VVI?oc=5",
+   "source": "UA.NEWS",
+   "score": 57,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Meta Launches Muse Wonder AI Models to Strengthen Its Position in Frontier AI",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOelM1V3pPTnlSMldjWG93aHFrWjI2N2k2ZzhVcVFaangtRWhFX0pnV0tVVGdUbWNGRS1GbDIyTlJyQy1KX1R0S2tqMzE1OFo1UnNtUWozNFlKSnhXdmxVelU1M19nUjNGc0I5cHhjMGZLTnI2QVVwZGtUR0lHcW9Wdm9BbmpSTDA2SFdiSldNY2wwTS1FRXFWQzhkcnNHU3liM2ZweEpvTjFQdHBaekpaVm9lRTg5ejFNZ0hN?oc=5",
+   "source": "Coin Edition",
+   "score": 57,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  },
+  {
+   "title": "Meta Unveils Frontier Muse Wonder Model, Reclaiming Competitive Ground In AI Race",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeHQ4Q3dOTjNPRF9lZWQ1eHlJNy1BQ0tPczJmUElPM0lDRVVrVTZKa1J4cnhrSjNFejVrbEdlWWJRUldhbFd5OWNqS1ZPanhOd0lsMV9PS0Y2a3RQRlNXRmpPc0pWVklvZC1SR1JMVkZycExaZkM0VXJIekdjY00tdGxzbTZKM1c5TlYzTWVMeFBPbEJGNFZFaVBXcHVpZnZXWExMRFpQMHExU2dFYndhSWRBOFAycjI5cjMzT2VnaUV6VVBNQW5JSFNUR2paNktoQUphai1iQmw?oc=5",
+   "source": "TradingView",
+   "score": 56,
+   "cats": [
+    "ai",
+    "bigtech"
+   ],
+   "tickers": [
+    "META"
+   ]
+  }
+ ],
+ "brief": [
+  "US stocks: S&P 500 -0.06%, Nasdaq 100 -0.71%, Dow +0.38%.",
+  "10-year Treasury yield 5.24% (-0 bp); VIX 15.2; gold -0.5%; bitcoin -1.1%.",
+  "Health care outpaced the market: the sector moved +0.69% against -0.06% for the S&P 500.",
+  "Pharmacy tech and automation led the watchlist at +1.38%; Big Tech and AI lagged at -0.54%.",
+  "Biggest single move: Meta Platforms at +3.4%, with 17 related headlines.",
+  "WTI crude is $93.16, +1.4% on the day and +61% from a year ago.",
+  "Prescription drug and medical goods prices are running -2.7% year over year, while pharmacy dispensing margins sit at +1.1%.",
+  "FDA reports 68 drugs in active shortage and 4 Class I recalls in the last 30 days."
+ ]
+}
